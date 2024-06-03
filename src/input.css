@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono";
+  }
+  
+  .dragging{
+    cursor: grab;
+    user-select: none;
+  }
+  .scroll-smooth{
+    scroll-behavior: smooth;
+  }
+  .custom-scrollbar {
+    overflow-y: auto;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    border: 1px solid #ffffff;
+  }
+  
+  .scroller{
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 5% , white 95%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+  }
+  
+  .rotate-item-1{animation: rotation 10s linear infinite;-webkit-animation: rotation 10s linear infinite; }
+  .rotate-item-1-5{animation: rotation 15s linear infinite;-webkit-animation: rotation 15s linear infinite; }
+  .rotate-item-2{animation: rotation 20s linear infinite;-webkit-animation: rotation 20s linear infinite;}
+  
+  .anti-rotate-item-1{animation: anti-rotation 10s linear infinite;-webkit-animation: anti-rotation 10 linear infinite; }
+  .anti-rotate-item-1-5{animation: anti-rotation 15s linear infinite;-webkit-animation: anti-rotation 15s linear infinite; }
+  .anti-rotate-item-2{animation: anti-rotation 20s linear infinite;-webkit-animation: anti-rotation 20s linear infinite; }
+  
+  @keyframes rotation {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+  }
+  @-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg); }
+    to {-webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes anti-rotation {
+    from {transform: rotate(360deg); }
+    to {transform: rotate(0deg); }
+  }
+  @-webkit-keyframes  anti-rotation {
+    from {-webkit-transform: rotate(360deg); }
+    to {-webkit-transform: rotate(0deg); }
+  }
