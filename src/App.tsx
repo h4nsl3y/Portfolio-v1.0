@@ -1,6 +1,5 @@
 import Navbar from '@/Component/Navbar';
 import SectionArea from '@/Component/SectionArea'
-import Background from "@/Component/Background"
 import './output.css'
 import './App.css'
 
