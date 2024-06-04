@@ -1,11 +1,31 @@
+import { useState } from 'react';
 import navigation_icon from '@/assets/image/navigation_icon.png'
 
 
-let buttonClass = 'w-full aspect-square flex item-center justify-center rounded hover:bg-[#7b3aff80] active:bg-[#7b3aff]';
-let imageClass = 'w-2/5 h-2/5 m-auto';
+let buttonClass = 'w-full aspect-square flex item-center justify-center rounded transition-colors duration-300 ease-in-out  hover:bg-[#7b3aff80] active:bg-[#7b3aff]';
+let imageClass = 'w-2/5 h-2/5 m-auto dark:invert';
+
+type Props = {
+  option: string;
+  setOption: React.Dispatch<React.SetStateAction<string>>;
+};
 
 
-const index = () => {
+const index = ( {option, setOption} : Props) => {
+
+  
+
+
+  function scroll(id : string){ document.getElementById(id)?.scrollIntoView({ behavior: 'smooth'})}
+  const handleOptionChange = (btnElement: React.ChangeEvent<HTMLInputElement>) => {
+
+    {/*let parent = btnElement.currentTarget.parentElement;*/}
+    setOption(btnElement.target.value);
+    scroll(btnElement.target.value);
+  };
+
+
+
   return (
     <div className={`h-full w-[5%] max-w-[100px] flex flex-col justify-between rounded shadow-lg shadow-black`}>
         <button className={`${buttonClass}`}>
@@ -13,15 +33,18 @@ const index = () => {
         </button>
 
         <div className='w-full h-fit flex flex-col item-center justify-center'>
-          <button className={`${buttonClass}`}>
+          <label className={`${buttonClass} ${option=='Home' ? 'bg-[#7b3aff80]' : '' }`}>
+            <input type="radio" name="screen" value="Home" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
             <img src={navigation_icon} className={`${imageClass}`}/>
-          </button>
-          <button className={`${buttonClass}`}>
+          </label>
+          <label className={`${buttonClass} ${option=='About' ? 'bg-[#7b3aff80]' : '' }`}>
+          <input type="radio" name="screen" value="About" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
             <img src={navigation_icon} className={`${imageClass}`}/>
-          </button>
-          <button className={`${buttonClass}`}>
+          </label>
+          <label className={`${buttonClass} ${option=='Project' ? 'bg-[#7b3aff80]' : '' }`}>
+          <input type="radio" name="screen" value="Project" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
             <img src={navigation_icon} className={`${imageClass}`}/>
-          </button>
+          </label>
         </div>
 
         <div className='w-full h-fit flex flex-col item-center justify-center'>

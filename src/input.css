@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 html, body {
     height: 100%;
     width: 100%;
@@ -13,7 +11,6 @@ html, body {
     padding: 0;
     font-family: "JetBrains Mono";
   }
-  
   .dragging{
     cursor: grab;
     user-select: none;
@@ -27,30 +24,32 @@ html, body {
   .custom-scrollbar::-webkit-scrollbar {
     width: 5px;
   }
-  
   .custom-scrollbar::-webkit-scrollbar-track {
     background: #000000;
   }
-  
   .custom-scrollbar::-webkit-scrollbar-thumb {
     background: #ffffff;
     border: 1px solid #ffffff;
   }
-  
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     border: 1px solid #ffffff;
   }
-  
   .scroller{
     overflow: hidden;
     mask: linear-gradient(90deg, transparent, white 5% , white 95%, transparent);
     -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
   }
-  
+  .elementScreen{
+    border: solid rgba(0,0,0,0);
+    border-width: 1px;
+  }
+  .fade{
+    -webkit-mask: linear-gradient(0deg, transparent, white 10% , white 90%, transparent);
+    mask: linear-gradient(0deg, transparent, white 10% , white 90%, transparent);
+  }
   .rotate-item-1{animation: rotation 10s linear infinite;-webkit-animation: rotation 10s linear infinite; }
   .rotate-item-1-5{animation: rotation 15s linear infinite;-webkit-animation: rotation 15s linear infinite; }
   .rotate-item-2{animation: rotation 20s linear infinite;-webkit-animation: rotation 20s linear infinite;}
-  
   .anti-rotate-item-1{animation: anti-rotation 10s linear infinite;-webkit-animation: anti-rotation 10 linear infinite; }
   .anti-rotate-item-1-5{animation: anti-rotation 15s linear infinite;-webkit-animation: anti-rotation 15s linear infinite; }
   .anti-rotate-item-2{animation: anti-rotation 20s linear infinite;-webkit-animation: anti-rotation 20s linear infinite; }
