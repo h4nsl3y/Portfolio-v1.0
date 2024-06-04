@@ -672,12 +672,12 @@ video {
   grid-row: span 2 / span 2;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .m-2 {
   margin: 0.5rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -761,6 +761,10 @@ video {
   height: 90%;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -772,22 +776,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[270vh\] {
-  height: 270vh;
-}
-
-.h-\[90\] {
-  height: 90;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
 }
 
 .w-2\/5 {
@@ -847,60 +835,12 @@ video {
   grid-auto-flow: row;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
 .auto-rows-\[90vh\] {
   grid-auto-rows: 90vh;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-rows-\[90vh_90vh_90vh\] {
   grid-template-rows: 90vh 90vh 90vh;
-}
-
-.grid-rows-\[90\%_90vh_90vh\] {
-  grid-template-rows: 90% 90vh 90vh;
-}
-
-.grid-rows-\[90\%_9\%_90vh\] {
-  grid-template-rows: 90% 9% 90vh;
-}
-
-.grid-rows-\[90\%_90\%_90vh\] {
-  grid-template-rows: 90% 90% 90vh;
-}
-
-.grid-rows-\[90\%_90\%_9\] {
-  grid-template-rows: 90% 90% 9;
-}
-
-.grid-rows-\[90\%_90\%_90\] {
-  grid-template-rows: 90% 90% 90;
-}
-
-.grid-rows-\[90\%_90\%_90\%\] {
-  grid-template-rows: 90% 90% 90%;
-}
-
-.grid-rows-\[90vh_90\%_90\%\] {
-  grid-template-rows: 90vh 90% 90%;
-}
-
-.grid-rows-\[90vh_90vh_90\%\] {
-  grid-template-rows: 90vh 90vh 90%;
-}
-
-.grid-rows-\[90vh_\] {
-  grid-template-rows: 90vh;
-}
-
-.grid-rows-\[90vh\] {
-  grid-template-rows: 90vh;
 }
 
 .flex-row {
@@ -923,24 +863,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
 }
 
 .overflow-y-scroll {
@@ -967,11 +891,6 @@ video {
 
 .border {
   border-width: 1px;
-}
-
-.bg-\[\#121231\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 18 49 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#5050a8\] {
@@ -1284,10 +1203,6 @@ html, body {
 }
 
 @media (min-width: 640px) {
-  .sm\:row-span-2 {
-    grid-row: span 2 / span 2;
-  }
-
   .sm\:h-\[90\%\] {
     height: 90%;
   }
@@ -1300,16 +1215,16 @@ html, body {
     grid-auto-flow: column;
   }
 
+  .sm\:auto-rows-\[40vh\] {
+    grid-auto-rows: 40vh;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
   .sm\:overflow-hidden {
