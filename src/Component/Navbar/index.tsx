@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import navigation_icon from '@/assets/image/navigation_icon.png'
 
 
