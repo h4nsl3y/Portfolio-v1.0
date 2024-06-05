@@ -1,3 +1,4 @@
+import NotificationType from "@/Types/NotificationType"
 import navigation_icon from '@/assets/image/navigation_icon.png';
 import home_icon from '@/assets/image/home_icon.png';
 import user_icon from '@/assets/image/user_icon.png'
@@ -14,23 +15,38 @@ let imageClass = 'w-2/5 h-2/5 m-auto dark:invert';
 type Props = {
   option: string;
   setOption: React.Dispatch<React.SetStateAction<string>>;
+  setNotification: React.Dispatch<React.SetStateAction<NotificationType>>;
 };
 
 
-const index = ( {option, setOption} : Props) => {
-
-  
-
+  const index = ( {option, setOption, setNotification} : Props) => {
 
   function scroll(id : string){ document.getElementById(id)?.scrollIntoView({ behavior: 'smooth'})}
-  const handleOptionChange = (btnElement: React.ChangeEvent<HTMLInputElement>) => {
 
-    {/*let parent = btnElement.currentTarget.parentElement;*/}
+  const handleOptionChange = (btnElement: React.ChangeEvent<HTMLInputElement>) => {
     setOption(btnElement.target.value);
     scroll(btnElement.target.value);
   };
 
+  const handleNotification = (id: string) => {
 
+    let notificationData: NotificationType = {title:"title", contentType:"text", content:"content" };
+    switch(id){
+      case "phone":
+        notificationData = {title:"Phone : ", contentType:"text", content:"+230-5807-8946" };
+        break;
+      case "email":
+        notificationData = {title:"Email : ", contentType:"email", content:"hansleyeleonore@gmail.com" };
+        break;
+      case "linkdin":
+        notificationData = {title:"Linkdin : ", contentType:"href", content:"https://www.linkedin.com/in/hansley-eleonore-b17705181" };
+        break;
+      case "github":
+        notificationData = {title:"Github : ", contentType:"href", content:"https://github.com/h4nsl3y" };
+        break;
+    }
+    setNotification(notificationData);
+  };
 
   return (
     <div className={`h-full w-[5%] max-w-[100px] flex flex-col justify-between rounded shadow-lg shadow-black`}>
@@ -54,16 +70,16 @@ const index = ( {option, setOption} : Props) => {
         </div>
 
         <div className='w-full h-fit flex flex-col item-center justify-center'>
-          <button className={`${buttonClass}`}>
+          <button className={`${buttonClass}`} onClick={()=>handleNotification('phone')}>
             <img src={phone_icon} className={`${imageClass}`}/>
           </button>
-          <button className={`${buttonClass}`}>
+          <button className={`${buttonClass}`} onClick={()=>handleNotification('email')}>
             <img src={email_icon} className={`${imageClass}`}/>
           </button>
-          <button className={`${buttonClass}`}>
+          <button className={`${buttonClass}`} onClick={()=>handleNotification('linkdin')}>
             <img src={linkdin_icon} className={`${imageClass}`}/>
           </button>
-          <button className={`${buttonClass}`}>
+          <button className={`${buttonClass}`} onClick={()=>handleNotification('github')}>
             <img src={github_icon} className={`${imageClass}`}/>
           </button>
         </div>

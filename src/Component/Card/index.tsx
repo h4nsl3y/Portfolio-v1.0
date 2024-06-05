@@ -35,7 +35,7 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description}: Props) => {
             </div>
             <div className='w-full h-1/2 sm:w-2/3 sm:h-full'>
                 <div className='w-full h-full'>
-                <p className='text-[10px] sm:text-[12px] m-4'>{description}</p> 
+                <p className='text-[10px] md:text-[12px] m-4'>{description}</p> 
                 </div>
             </div>
         </div>

@@ -17,26 +17,26 @@ const index = () => {
                         imagePath_1 = {Portfolio_1}
                         imagePath_2 = {Portfolio_2}
                         title = 'Portfolio'
-                        date = '05 June'
-                        description = 'An online portfolio'
+                        date = 'Jun 2024'
+                        description = 'A react online portfolio use to present the different project made.'
                         />
                     </div>
                     <div className={`row-span-1 col-span-1 ${boxStyle}`}>
                     <Card  
                         imagePath_1 = {SkillHub_1}
                         imagePath_2 = {SkillHub_2}
-                        title = 'Portfolio'
-                        date = '05 June'
-                        description = 'An online portfolio'
+                        title = 'SkillHub'
+                        date = 'Dec 2023'
+                        description = 'Skill Hub is an employee training management portal that allows employees to enroll to courses in near future'
                         />
                     </div>
                     <div className={`row-span-1 col-span-1 ${boxStyle}`}>
                     <Card  
                         imagePath_1 = {SER}
                         imagePath_2 = ""
-                        title = 'Portfolio'
-                        date = '05 June'
-                        description = 'An online portfolio'
+                        title = 'Speech Emotion Recognition'
+                        date = 'Jun 2023'
+                        description = 'A mobile application that records the voice of the speaker or audio file and send the data to an online server, where they are analyzed by a multi-modal model created with Python using the Tensorflow library from which information is extract and send back to application to be present to user.'
                         />
                     </div>
                 </div>
