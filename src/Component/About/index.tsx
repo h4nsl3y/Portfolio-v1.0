@@ -1,12 +1,22 @@
 import Carousel from '@/Component/Carousel'
+import { useEffect } from 'react';
 
 let boxStyle = `shadow-lg shadow-black rounded m-2`;
 
 const index = () => {
+
+  useEffect(() => {
+    function appear(){
+      let subArea = document.getElementById('subScreenFrame');
+      if(subArea){subArea.style.opacity="1";}
+    }
+    appear()
+  }, []);
+
   return (
-    <div className="w-full h-full flex elementScreen " id='About'>
+    <div className="w-full h-full flex elementScreen transition-opacity opacity-100 duration-300 ease-in-out  subScreenFrame" id='About'>
         <div className="h-full w-full flex">
-            <div className="h-[90vh] sm:h-[90%] w-[95%] grid grid-rows-[45vh_45vh_45vh] grid-cols-[75vw]  sm:grid-cols-2 sm:grid-rows-2 grid-flow-row sm:grid-flow-col m-auto custom-scrollbar">
+            <div className="h-[90vh] sm:h-[90%] w-[95%] grid grid-rows-[45vh_45vh_45vh] grid-cols-[90vw] sm:grid-cols-2 sm:grid-rows-2 grid-flow-row sm:grid-flow-col m-auto custom-scrollbar">
                 
                 <div className={`row-span-1 col-span-1 ${boxStyle}`}>
                   <div className="flex m-4">

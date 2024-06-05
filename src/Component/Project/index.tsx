@@ -4,12 +4,22 @@ import Portfolio_2 from '@/assets/image/mockup/Portfolio_2.png'
 import SkillHub_1 from '@/assets/image/mockup/SkillHub_1.png'
 import SkillHub_2 from '@/assets/image/mockup/SkillHub_2.png'
 import SER from '@/assets/image/mockup/SER.jpg'
+import { useEffect } from 'react'
 
 let boxStyle = `shadow-lg shadow-black rounded m-2`;
 
 const index = () => {
+
+    useEffect(() => {
+        function appear(){
+          let subArea = document.getElementById('subScreenFrame');
+          if(subArea){subArea.style.opacity="1";}
+        }
+        appear()
+      }, []);
+
     return (
-        <div className="w-full h-full flex elementScreen" id='Project'>
+        <div className="w-full h-full flex elementScreen transition-opacity opacity-100 duration-300 ease-in-out subScreenFrame" id='Project'>
             <div className="h-full w-full flex">
                 <div className="h-[90vh] sm:h-[90%] w-[95%] grid auto-rows-[90vh] sm:auto-rows-[50vh] sm:grid-cols-2 grid-flow-row  m-auto custom-scrollbar">
                     <div className={`row-span-1 col-span-1 ${boxStyle}`}>

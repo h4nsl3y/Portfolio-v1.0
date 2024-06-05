@@ -9,7 +9,7 @@ import linkdin_icon from '@/assets/image/linkdin_icon.png';
 import github_icon from '@/assets/image/github_icon.png';
 
 
-let buttonClass = 'w-full aspect-square flex item-center justify-center rounded transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
+let buttonClass = 'w-[50px] sm:w-full aspect-square flex item-center justify-center rounded transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
 let imageClass = 'w-2/5 h-2/5 m-auto dark:invert';
 
 type Props = {
@@ -18,14 +18,19 @@ type Props = {
   setNotification: React.Dispatch<React.SetStateAction<NotificationType>>;
 };
 
-
   const index = ( {option, setOption, setNotification} : Props) => {
 
-  function scroll(id : string){ document.getElementById(id)?.scrollIntoView({ behavior: 'smooth'})}
-
   const handleOptionChange = (btnElement: React.ChangeEvent<HTMLInputElement>) => {
-    setOption(btnElement.target.value);
-    scroll(btnElement.target.value);
+
+    let subscreens = document.getElementsByClassName('subScreenFrame');
+    Array.from(subscreens).forEach(element => {
+      (element as HTMLElement).style.opacity = '0';
+    });
+
+    const timeout = setTimeout(() => {
+      setOption(btnElement.target.value);
+    },500)
+    return () => clearTimeout(timeout);
   };
 
   const handleNotification = (id: string) => {
@@ -47,12 +52,20 @@ type Props = {
     }
     setNotification(notificationData);
   };
+  const expand = () =>{
+    let navbar = document.getElementById('navbar');
+    if(navbar && window.innerWidth <= 640){
+      navbar.style.height =  navbar.style.height == "400px" ? "50px" : "400px";
+    }
+  }
 
   return (
-    <div className={`h-full w-[5%] max-w-[100px] flex flex-col justify-between rounded shadow-lg shadow-black`}>
-        <button className={`${buttonClass}`}>
+    <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-transform ease-in-out duration-300`} id='navbar'>
+      <div className='h-fit w-fit flex item-center justify-center'>
+        <button className={`${buttonClass}`}  onClick={()=>expand()}>
           <img src={navigation_icon} className={`${imageClass}`}/>
         </button>
+      </div>
 
         <div className='w-full h-fit flex flex-col item-center justify-center'>
           <label className={`${buttonClass} ${option=='Home' ? 'bg-[#7b3aff80]' : '' }`}>
@@ -69,7 +82,7 @@ type Props = {
           </label>
         </div>
 
-        <div className='w-full h-fit flex flex-col item-center justify-center'>
+        <div className='w-full h-fit flex flex-row sm:flex-col item-center justify-between sm:justify-center'>
           <button className={`${buttonClass}`} onClick={()=>handleNotification('phone')}>
             <img src={phone_icon} className={`${imageClass}`}/>
           </button>

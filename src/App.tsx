@@ -17,9 +17,9 @@ function App() {
 
     return (
       <div className={`h-screen w-screen bg-[#5050a8] text-black dark:bg-[#121231] dark:text-white flex items-center justify-center`}>
-        <div className={`h-[90%] w-[90%] flex flex-row items-center justify-between `}>
+        <div className={`h-full sm:h-[90%] w-full sm:w-[90%] flex flex-col sm:flex-row items-center justify-between `}>
             <Navbar option={selectedOption} setOption={setSelectedOption} setNotification={setNotification}/>
-            <SectionArea/>
+            <SectionArea option={selectedOption}/>
         </div>
         <Notification notificationContent={notificationContent}/>
       </div>
