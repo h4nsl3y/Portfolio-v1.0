@@ -25,14 +25,16 @@ html, body {
     width: 5px;
   }
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #000000;
+    background: #00000080;
+    border-left: 1px solid #7b3aff80;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #ffffff;
-    border: 1px solid #ffffff;
+    background: #7b3aff;
+    border-top: 1px solid #7b3aff80;
+    border-bottom: 1px solid #7b3aff80;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    border: 1px solid #ffffff;
+    border: 1px solid #7b3aff80;
   }
   .scroller{
     overflow: hidden;
