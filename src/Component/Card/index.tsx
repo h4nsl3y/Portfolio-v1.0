@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-
 type Props = {
     imagePath_1: string ;
     imagePath_2: string ;
