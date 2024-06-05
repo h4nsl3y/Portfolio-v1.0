@@ -69,12 +69,12 @@ const index = () => {
                     </div>
                       <div className='m-4'>
                         <div className='flex flex-col sm:flex-row justify-between'>
-                          <div><p className='font-bold'>Bachelor's degree</p></div>
-                          <div><p className='text-[#808080]'>Sep 2020 - Dec 2023</p></div>
+                          <div><p className='font-bold text-[10px] sm:text-[12px]'>Bachelor's degree</p></div>
+                          <div><p className='text-[#808080] text-[10px] sm:text-[12px]'>Sep 2020 - Dec 2023</p></div>
                         </div>
                         <div className='flex flex-col sm:flex-row justify-between'>
-                          <div><p className='font-bold'>High School Certificate</p></div>
-                          <div><p className='text-[#808080]'>Dec 2019</p></div>
+                          <div><p className='font-bold text-[10px] sm:text-[12px]'>High School Certificate</p></div>
+                          <div><p className='text-[#808080] text-[10px] sm:text-[12px]'>Dec 2019</p></div>
                         </div>
                       </div>
                     </div>
