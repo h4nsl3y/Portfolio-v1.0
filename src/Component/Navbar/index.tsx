@@ -21,16 +21,17 @@ type Props = {
   const index = ( {option, setOption, setNotification} : Props) => {
 
   const handleOptionChange = (btnElement: React.ChangeEvent<HTMLInputElement>) => {
-
-    let subscreens = document.getElementsByClassName('subScreenFrame');
-    Array.from(subscreens).forEach(element => {
-      (element as HTMLElement).style.opacity = '0';
-    });
-
-    const timeout = setTimeout(() => {
-      setOption(btnElement.target.value);
-    },500)
-    return () => clearTimeout(timeout);
+    if(option != btnElement.target.value){
+      let subscreens = document.getElementsByClassName('subScreenFrame');
+      Array.from(subscreens).forEach(element => {
+        (element as HTMLElement).style.opacity = '0';
+      });
+  
+      const timeout = setTimeout(() => {
+        setOption(btnElement.target.value);
+      },500)
+      return () => clearTimeout(timeout);
+    }
   };
 
   const handleNotification = (id: string) => {
@@ -62,7 +63,7 @@ type Props = {
   return (
     <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-transform ease-in-out duration-300`} id='navbar'>
       <div className='h-fit w-fit flex item-center justify-center'>
-        <button className={`${buttonClass}`}  onClick={()=>expand()}>
+        <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`}  onClick={()=>expand()}>
           <img src={navigation_icon} className={`${imageClass}`}/>
         </button>
       </div>
@@ -70,7 +71,7 @@ type Props = {
         <div className='w-full h-fit flex flex-col item-center justify-center'>
           <label className={`${buttonClass} ${option=='Home' ? 'bg-[#7b3aff80]' : '' }`}>
             <input type="radio" name="screen" value="Home" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
-            <img src={home_icon} className={`${imageClass}`}/>
+            <img src={home_icon} className={`${imageClass} `}/>
           </label>
           <label className={`${buttonClass} ${option=='About' ? 'bg-[#7b3aff80]' : '' }`}>
           <input type="radio" name="screen" value="About" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
@@ -83,16 +84,16 @@ type Props = {
         </div>
 
         <div className='w-full h-fit flex flex-row sm:flex-col item-center justify-between sm:justify-center'>
-          <button className={`${buttonClass}`} onClick={()=>handleNotification('phone')}>
+          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('phone')}>
             <img src={phone_icon} className={`${imageClass}`}/>
           </button>
-          <button className={`${buttonClass}`} onClick={()=>handleNotification('email')}>
+          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('email')}>
             <img src={email_icon} className={`${imageClass}`}/>
           </button>
-          <button className={`${buttonClass}`} onClick={()=>handleNotification('linkdin')}>
+          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('linkdin')}>
             <img src={linkdin_icon} className={`${imageClass}`}/>
           </button>
-          <button className={`${buttonClass}`} onClick={()=>handleNotification('github')}>
+          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('github')}>
             <img src={github_icon} className={`${imageClass}`}/>
           </button>
         </div>
