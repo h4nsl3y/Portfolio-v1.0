@@ -8,39 +8,39 @@ let frameStyle: string = 'h-full w-full flex flex-col items-center justify-cente
 let frameTextStyle: string = 'm-auto text-sm';
 
 const carousel = () => {
-    
-    let gallery = document.getElementById("gallery") ;
 
-    function swipeGallery(value: string){
+        function swipeGallery(value: string){
+        let gallery = document.getElementById("gallery")
         if(gallery){
             let imageWidth = gallery.getElementsByTagName('li')[0].offsetWidth;
-            gallery.classList.add("scroll-smooth");
-            gallery.scrollLeft += ( value == "left" ) ? -imageWidth : imageWidth;
-            gallery.classList.remove("scroll-smooth");
-        }   
-    };
-    let isDragging = false, startX: number, startScrollLeft: number;
-
-    if(gallery){
-        const dragStart = (movement: any) =>{
-            isDragging = true;
-            gallery.classList.add("dragging");
-            startX = movement.pageX;
-            startScrollLeft = gallery.scrollLeft;
-        }
-        const drag = (movement: MouseEvent) =>{
-            if (isDragging){
-                gallery.scrollLeft = startScrollLeft - (movement.pageX - startX);
+                gallery.classList.add("scroll-smooth");
+                gallery.scrollLeft += ( value == "left" ) ? -imageWidth : imageWidth;
+                gallery.classList.remove("scroll-smooth");
             }
-        }
-        const dragStop = () =>{
-            isDragging = false;
-            gallery.classList.remove("dragging");
-        }
-        gallery.addEventListener("mousedown", dragStart);
-        gallery.addEventListener("mousemove", drag);
-        document.addEventListener("mouseup", dragStop);
-    }
+       };
+            let isDragging = false, startX: number, startScrollLeft: number;
+            let gallery = document.getElementById("gallery") ;
+
+            if(gallery){
+                const dragStart = (movement: any) =>{
+                    isDragging = true;
+                    gallery.classList.add("dragging");
+                    startX = movement.pageX;
+                    startScrollLeft = gallery.scrollLeft;
+                }
+                const drag = (movement: MouseEvent) =>{
+                    if (isDragging){
+                        gallery.scrollLeft = startScrollLeft - (movement.pageX - startX);
+                    }
+                }
+                const dragStop = () =>{
+                    isDragging = false;
+                    gallery.classList.remove("dragging");
+                }
+                gallery.addEventListener("mousedown", dragStart);
+                gallery.addEventListener("mousemove", drag);
+                document.addEventListener("mouseup", dragStop);
+            }
 
 return (
     <div className='w-full h-full'>
