@@ -9,7 +9,7 @@ import linkdin_icon from '@/assets/image/linkdin_icon.png';
 import github_icon from '@/assets/image/github_icon.png';
 
 
-let buttonClass = 'w-[50px] sm:w-full aspect-square flex item-center justify-center rounded transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
+let buttonClass = 'w-[50px] sm:w-full aspect-square flex item-center justify-center rounded bg-transparent transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
 let imageClass = 'w-2/5 h-2/5 m-auto dark:invert';
 
 type Props = {

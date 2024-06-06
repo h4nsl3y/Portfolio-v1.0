@@ -962,6 +962,10 @@ video {
   background-color: #7b3aff80;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
