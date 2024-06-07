@@ -684,10 +684,6 @@ video {
   grid-row: span 2 / span 2;
 }
 
-.float-left {
-  float: left;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -698,11 +694,6 @@ video {
 
 .m-auto {
   margin: auto;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mx-4 {
@@ -825,6 +816,18 @@ video {
   height: 33.333333%;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[45\] {
+  height: 45;
+}
+
+.h-\[45\%\] {
+  height: 45%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -864,6 +867,18 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[90\] {
+  width: 90;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .shrink {
@@ -914,6 +929,10 @@ video {
   grid-template-rows: 45vh 45vh 45vh;
 }
 
+.grid-rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -938,8 +957,24 @@ video {
   align-self: center;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -1003,16 +1038,6 @@ video {
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 
 .p-1 {
@@ -1370,6 +1395,15 @@ html, body {
 @media (min-width: 640px) {
   .sm\:right-3 {
     right: 0.75rem;
+  }
+
+  .sm\:m-4 {
+    margin: 1rem;
+  }
+
+  .sm\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .sm\:flex {
