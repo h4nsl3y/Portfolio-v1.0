@@ -21,7 +21,7 @@ const index = () => {
     return (
         <div className="w-full h-full flex elementScreen transition-opacity opacity-100 duration-300 ease-in-out subScreenFrame" id='Project'>
             <div className="h-full w-full flex">
-                <div className="h-[90vh] sm:h-[90%] w-[95%] grid auto-rows-[90vh] sm:auto-rows-[50vh] sm:grid-cols-2 grid-flow-row m-auto overflow-x-hidden custom-scrollbar">
+                <div className="h-[90vh] sm:h-[90%] w-[95%] grid auto-rows-[90vh] auto-cols-[90vw] sm:auto-rows-[50vh] sm:grid-cols-2 grid-flow-row m-auto custom-scrollbar">
                     <div className={`row-span-1 col-span-1 ${boxStyle}`}>
                       <Card  
                         imagePath_1 = {Portfolio_1}

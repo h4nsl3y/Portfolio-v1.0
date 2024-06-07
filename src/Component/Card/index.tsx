@@ -28,7 +28,7 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtLi
                 </div>
             </div>
         </div>
-        <div className='w-full sm:w-full h-1/6'>
+        <div className='w-full h-1/6'>
             <Technologies technologies={technologtList}/>
         </div>
     </div>

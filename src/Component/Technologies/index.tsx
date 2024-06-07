@@ -22,7 +22,7 @@ import VSCode from "@/assets/image/icon/vscode-original.svg";
 import IntelliJ from "@/assets/image/icon/intellij-original.svg";
 import Pycharm from "@/assets/image/icon/pycharm-original.svg";
 
-let listItemClass = "h-1/2 sm:h-full aspect-square flex items-center justify-center";
+let listItemClass = "h-full sm:h-full aspect-square flex items-center justify-center";
 let imageItemClass = "h-1/2 aspect-square m-auto";
           
 type Props = {
@@ -35,7 +35,7 @@ const index = ({technologies}: Props) => {
 
   return (
     <div className='h-full w-full flex items-center justify-center'>
-        <ul className='w-full h-full flex flex-row overflow-auto'>
+        <ul className='w-full h-1/2 sm:h-full flex flex-row overflow-auto custom-scrollbar-h'>
             { technologyList.includes('visualstudio') && <li className={`${listItemClass}`}><img src={VisualStudio} className={`${imageItemClass}`}/></li>} 
             { technologyList.includes('vscode') && <li className={`${listItemClass}`}><img src={VSCode} className={`${imageItemClass}`}/></li>} 
             { technologyList.includes('androidstudio') && <li className={`${listItemClass}`}><img src={AndroidStudio} className={`${imageItemClass}`}/></li>}
