@@ -29,6 +29,7 @@ const index = () => {
                         title = 'Portfolio'
                         date = 'Jun 2024'
                         description = 'A react online portfolio use to present the different project made.'
+                        technologtList='vscode-html-css-javascript-typescript-react-vite'
                         />
                     </div>
                     <div className={`row-span-1 col-span-1 ${boxStyle}`}>
@@ -38,6 +39,7 @@ const index = () => {
                         title = 'SkillHub'
                         date = 'Dec 2023'
                         description = 'Skill Hub is an employee training management portal that allows employees to enroll to courses in near future'
+                        technologtList='visualstudio-asp-csharp-html-css-javascript-mysql'
                         />
                     </div>
                     <div className={`row-span-1 col-span-1 ${boxStyle}`}>
@@ -47,6 +49,7 @@ const index = () => {
                         title = 'Speech Emotion Recognition'
                         date = 'Jun 2023'
                         description = 'A mobile application that records the voice of the speaker or audio file and send the data to an online server, where they are analyzed by a multi-modal model created with Python using the Tensorflow library from which information is extract and send back to application to be present to user.'
+                        technologtList='pycharm-androidstudio-java-python-sqlite'
                         />
                     </div>
                 </div>
