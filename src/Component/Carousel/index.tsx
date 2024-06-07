@@ -107,7 +107,7 @@ return (
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'   className='h-3/5 aspect-square' draggable='false'/>
+                            <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'   className='h-3/5 aspect-square invert' draggable='false'/>
                             <p className={`${frameTextStyle}`}>GitHub</p>
                         </div>
                     </li>
