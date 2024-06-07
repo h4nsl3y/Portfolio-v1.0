@@ -22,9 +22,9 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtLi
                 <img src={imagePath_1} className={`${imagePath_2 == "" ? "h-full" : "h-[45%] m-auto" } object-contain`} />
                 { imagePath_2 != "" && <img src={imagePath_2} className='h-[45%] object-contain m-auto' />} 
             </div>
-            <div className='w-full h-1/2 sm:w-2/3 sm:h-full'>
-                <div className='object-fit'>
-                <p className='text-[10px] md:text-[12px] mx-4 sm:m-4'>{description}</p> 
+            <div className='w-full h-1/2 sm:w-2/3 sm:h-full flex flex-col text-left items-center justify-center'>
+                <div className='object-fit '>
+                    <p className='text-[10px] md:text-[12px] mx-4 sm:m-4'>{description}</p> 
                 </div>
             </div>
         </div>
