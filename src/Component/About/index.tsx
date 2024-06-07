@@ -35,14 +35,14 @@ const index = () => {
                   <div className="flex m-4">
                     <p>Technology.</p><p className={`text-[#7b3aff]`}>js</p>
                   </div>
-                  <div className="flex m-4">
+                  <div className="flex flex-col text-center items-center justify-center mx-4 my-auto">
                     <Carousel/>
                   </div>
                 </div>
 
                 <div className={`row-span-2 col-span-1 ${boxStyle}`}>
                   <div className="flex m-4">
-                    <p>Stuff.</p><p className={`text-[#7b3aff]`}>txt</p>
+                    <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
 
                   <div className='w-[95%] grid grid-rows-2 grid-cols-1 auto-rows-[45%] grid-flow-row m-auto'>

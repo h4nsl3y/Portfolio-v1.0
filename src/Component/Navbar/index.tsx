@@ -62,7 +62,7 @@ type Props = {
 
   return (
     <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-transform ease-in-out duration-300`} id='navbar'>
-      <div className='h-fit w-fit flex item-center justify-center'>
+      <div className='h-fit w-fit sm:w-full flex item-center justify-center'>
         <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`}  onClick={()=>expand()}>
           <img src={navigation_icon} className={`${imageClass}`}/>
         </button>
