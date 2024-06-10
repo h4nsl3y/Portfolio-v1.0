@@ -16,7 +16,7 @@ import AzureDevOps from "@/assets/image/icon/azuredevops-original.svg";
 import MySQL from "@/assets/image/icon/mysql-original.svg";
 import SQLite from "@/assets/image/icon/sqlite-original.svg";
 
-let buttonClass = 'h-full aspect-square flex item-center justify-center rounded bg-transparent transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] active:bg-[#7b3aff] ';
+let buttonClass = 'h-1/2 aspect-square flex item-center justify-center rounded bg-transparent transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] active:bg-[#7b3aff] ';
 let image_style: string = 'w-2/5 aspect-square dark:invert m-auto';
 let listItemStyle: string = 'h-full aspect-square flex items-center justify-center';
 let frameStyle: string = 'h-full w-full flex flex-col items-center justify-center';

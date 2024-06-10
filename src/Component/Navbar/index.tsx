@@ -58,7 +58,7 @@ type Props = {
   const expand = () =>{
     let navbar = document.getElementById('navbar');
     if(navbar && window.innerWidth <= 640){
-      navbar.style.height =  navbar.style.height == "400px" ? "50px" : "400px";
+      navbar.style.height =  navbar.style.height == "550px" ? "50px" : "550px";
     }
   }
   const downloadCV = () =>{
@@ -66,10 +66,10 @@ type Props = {
   }
 
   return (
-    <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-transform ease-in-out duration-300`} id='navbar'>
+    <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-all duration-300`} id='navbar'>
       
       {window.innerWidth <= 640 &&
-      <div className='h-fit w-fit sm:w-full flex item-center justify-center'>
+      <div className='h-fit w-full flex item-center justify-center'>
         <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`}  onClick={()=>expand()}>
           <img src={navigation_icon} className={`${imageClass}`}/>
         </button>
@@ -109,16 +109,16 @@ type Props = {
 
         <div className='w-full h-fit flex flex-row sm:flex-col item-center justify-between sm:justify-center'>
           <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('phone')}>
-            <img src={phone_icon} className={`${imageClass}`}/>
+            <img src={phone_icon} className={`${imageClass} m-auto`}/>
           </button>
           <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('email')}>
-            <img src={email_icon} className={`${imageClass}`}/>
+            <img src={email_icon} className={`${imageClass} m-auto`}/>
           </button>
           <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('linkdin')}>
-            <img src={linkdin_icon} className={`${imageClass}`}/>
+            <img src={linkdin_icon} className={`${imageClass} m-auto`}/>
           </button>
           <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('github')}>
-            <img src={github_icon} className={`${imageClass}`}/>
+            <img src={github_icon} className={`${imageClass} m-auto`}/>
           </button>
         </div>
 

@@ -31,7 +31,7 @@ const index = () => {
                   </div>
                 </div>
 
-                <div className={`row-span-1 col-span-1 ${boxStyle}`}>
+                <div className={`row-span-1 col-span-1 ${boxStyle} flex flex-col justify-between`}>
                   <div className="flex m-4">
                     <p>Technology.</p><p className={`text-[#7b3aff]`}>js</p>
                   </div>
