@@ -61,9 +61,6 @@ type Props = {
       navbar.style.height =  navbar.style.height == "550px" ? "50px" : "550px";
     }
   }
-  const downloadCV = () =>{
-
-  }
 
   return (
     <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-all duration-300`} id='navbar'>
