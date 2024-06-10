@@ -62,6 +62,7 @@ type Props = {
     }
   }
 
+
   return (
     <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-all duration-300`} id='navbar'>
       
@@ -97,7 +98,6 @@ type Props = {
           </div>
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
             <a href={curriculumVitae} download='Curriculum Vitae.pdf' className={`${buttonClass}`}>
-              <input type="radio" name="screen" value="Project" className={`absolute opacity-0 w-[0px] h-[0px]`} onClick={ () => downloadCV()}/>
               <img src={document_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>Curriculum Vitae</p> }
             </a>
@@ -118,7 +118,6 @@ type Props = {
             <img src={github_icon} className={`${imageClass} m-auto`}/>
           </button>
         </div>
-
     </div>
   )
 }
