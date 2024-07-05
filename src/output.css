@@ -779,10 +779,6 @@ video {
   height: 16.666667%;
 }
 
-.h-2\/5 {
-  height: 40%;
-}
-
 .h-3\/4 {
   height: 75%;
 }
@@ -828,10 +824,6 @@ video {
   height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-2\/5 {
   width: 40%;
 }
@@ -850,10 +842,6 @@ video {
 
 .w-\[20px\] {
   width: 20px;
-}
-
-.w-\[50px\] {
-  width: 50px;
 }
 
 .w-\[95\%\] {
@@ -893,16 +881,28 @@ video {
   grid-auto-columns: 80%;
 }
 
+.auto-cols-\[90\%\] {
+  grid-auto-columns: 90%;
+}
+
+.auto-cols-\[90\] {
+  grid-auto-columns: 90;
+}
+
+.auto-cols-\[90vh\] {
+  grid-auto-columns: 90vh;
+}
+
+.auto-cols-\[90vw\] {
+  grid-auto-columns: 90vw;
+}
+
 .grid-flow-row {
   grid-auto-flow: row;
 }
 
 .grid-flow-col {
   grid-auto-flow: column;
-}
-
-.auto-rows-\[45\%\] {
-  grid-auto-rows: 45%;
 }
 
 .auto-rows-\[90vh\] {
@@ -915,10 +915,6 @@ video {
 
 .grid-cols-\[90vw\] {
   grid-template-columns: 90vw;
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-\[45vh_45vh_45vh\] {
@@ -990,10 +986,6 @@ video {
 .bg-\[\#5050a8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(80 80 168 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#7b3aff80\] {
-  background-color: #7b3aff80;
 }
 
 .bg-\[\#7b3aff\] {
@@ -1223,12 +1215,6 @@ video {
 
 .transition-opacity {
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-transform {
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1482,12 +1468,12 @@ html, body {
     width: 90%;
   }
 
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:max-w-\[100px\] {
     max-width: 100px;
+  }
+
+  .sm\:auto-cols-\[80\%\] {
+    grid-auto-columns: 80%;
   }
 
   .sm\:grid-flow-col {
@@ -1518,12 +1504,12 @@ html, body {
     flex-direction: column;
   }
 
-  .sm\:justify-center {
-    justify-content: center;
+  .sm\:justify-end {
+    justify-content: flex-end;
   }
 
-  .sm\:overflow-hidden {
-    overflow: hidden;
+  .sm\:justify-center {
+    justify-content: center;
   }
 
   .sm\:text-5xl {
