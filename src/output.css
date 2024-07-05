@@ -861,6 +861,10 @@ video {
   width: 100vw;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -879,18 +883,6 @@ video {
 
 .auto-cols-\[80\%\] {
   grid-auto-columns: 80%;
-}
-
-.auto-cols-\[90\%\] {
-  grid-auto-columns: 90%;
-}
-
-.auto-cols-\[90\] {
-  grid-auto-columns: 90;
-}
-
-.auto-cols-\[90vh\] {
-  grid-auto-columns: 90vh;
 }
 
 .auto-cols-\[90vw\] {
@@ -1147,6 +1139,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[\#4545ff\] {
+  --tw-shadow-color: #4545ff;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .shadow-black {
   --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1281,7 +1278,7 @@ html, body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #00000080;
+  background: transparent;
   border-left: 1px solid #7b3aff80;
 }
 
@@ -1304,7 +1301,7 @@ html, body {
 }
 
 .custom-scrollbar-h::-webkit-scrollbar-track {
-  background: #00000080;
+  background: transparent;
   border-left: 1px solid #7b3aff80;
 }
 
@@ -1338,6 +1335,7 @@ html, body {
   background: rgba(80, 80, 168, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 10px rgba(0,0,0,1)
 }
 
 .rotate-item-1{
@@ -1466,6 +1464,22 @@ html, body {
 
   .sm\:w-\[90\%\] {
     width: 90%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .sm\:w-\[\%\] {
+    width: %;
+  }
+
+  .sm\:w-\[95\%\] {
+    width: 95%;
   }
 
   .sm\:max-w-\[100px\] {

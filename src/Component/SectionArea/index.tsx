@@ -9,7 +9,7 @@ type Props = {
 
 const index = ({option}: Props) => {
   return (
-    <div className={`h-full w-full sm:w-[90%] flex rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden`}>
+    <div className={`h-full w-full sm:w-[90%] flex rounded glass overflow-hidden`}>
       <div className= "h-full w-full z-10 overflow-hidden sm:fade">
         {option == "Home" && <Home/>}
         {option == "About" && <About/>}

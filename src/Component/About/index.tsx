@@ -3,7 +3,7 @@ import CareerCard from '@/Component/CareerCard'
 import CareerCardDescription from '@/Types/CareerCardDescription';
 import { useEffect } from 'react';
 
-let boxStyle = `shadow-lg shadow-black rounded m-2 glass`;
+let boxStyle = `rounded m-2 sm:w-[95%] w-full glass`;
 
 let WorkCards :CareerCardDescription[] = [
   {title: "Dayforce", startDate: 'Oct 2023', endDate: 'Ongoing'},

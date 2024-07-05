@@ -64,7 +64,7 @@ type Props = {
 
 
   return (
-    <div className={`h-[50px] w-full glass sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-all duration-300`} id='navbar'>
+    <div className={`h-[50px] w-full glass sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded overflow-hidden transition-all duration-300`} id='navbar'>
       
       {window.innerWidth <= 640 &&
       <div className='h-fit w-full flex item-center justify-center'>

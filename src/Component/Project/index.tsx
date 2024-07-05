@@ -6,7 +6,7 @@ import SkillHub_2 from '@/assets/image/mockup/SkillHub_2.png'
 import SER from '@/assets/image/mockup/SER.jpg'
 import { useEffect } from 'react'
 
-let boxStyle = `shadow-lg shadow-black rounded m-2 glass`;
+let boxStyle = `rounded m-2  sm:w-[95%] w-full glass`;
 
 const index = () => {
 
