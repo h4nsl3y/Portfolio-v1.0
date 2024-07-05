@@ -65,88 +65,88 @@ return (
             </button>
 
             <div className='w-3/4 aspect-square sm:aspect-[3/1] scroller overflow-hidden'>
-                <ul className='w-full h-full grid grid-flow-col items-center overflow-hidden' id='gallery'>
+                <ul className='w-full h-full grid grid-flow-col items-center sm:overflow-hidden custom-scrollbar-h' id='gallery'>
                 <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={Java} className='h-3/5 aspect-square' draggable='false'/>          
+                            <img src={Java} className='h-3/5 aspect-square' draggable='true'/>          
                             <p className={`${frameTextStyle}`}>Java</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={Python} className='h-3/5 aspect-square' draggable='false'/>
-                            <p className='m-4 text-'>Python</p>
+                            <img src={Python} className='h-3/5 aspect-square' draggable='true'/>
+                            <p className={`${frameTextStyle}`}>Python</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={CSharp} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={CSharp} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>C#</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={HTML5} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={HTML5} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>HTML5</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={CSS3} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={CSS3} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>CSS3</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={Javascript} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={Javascript} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>JavaScript</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={TypeScript} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={TypeScript} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>TypeScript</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={Selenium} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={Selenium} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>Selenium</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={Cucumber} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={Cucumber} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>Gherkin</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={GitHub}  className='h-3/5 aspect-square invert' draggable='false'/>
+                            <img src={GitHub}  className='h-3/5 aspect-square invert' draggable='true'/>
                             <p className={`${frameTextStyle}`}>GitHub</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={Git}  className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={Git}  className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>Git</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={AzureDevOps} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={AzureDevOps} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>AzureDevOps</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={MySQL} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={MySQL} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>MySQL</p>
                         </div>
                     </li>
                     <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
-                            <img src={SQLite} className='h-3/5 aspect-square' draggable='false'/>
+                            <img src={SQLite} className='h-3/5 aspect-square' draggable='true'/>
                             <p className={`${frameTextStyle}`}>SQLite</p>
                         </div>
                     </li>

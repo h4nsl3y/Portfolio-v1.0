@@ -67,6 +67,11 @@ html, body {
     -webkit-mask: linear-gradient(0deg, transparent, white 10% , white 90%, transparent);
     mask: linear-gradient(0deg, transparent, white 10% , white 90%, transparent);
   }
+  .glass{
+    background: rgba(80, 80, 168, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
   .rotate-item-1{animation: rotation 10s linear infinite;-webkit-animation: rotation 10s linear infinite; }
   .rotate-item-1-5{animation: rotation 15s linear infinite;-webkit-animation: rotation 15s linear infinite; }
   .rotate-item-2{animation: rotation 20s linear infinite;-webkit-animation: rotation 20s linear infinite;}

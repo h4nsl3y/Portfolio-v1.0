@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.20",
+    "@tsparticles/engine": "^3.4.0",
+    "@tsparticles/react": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

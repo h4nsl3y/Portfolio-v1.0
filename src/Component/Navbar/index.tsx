@@ -11,7 +11,7 @@ import github_icon from '@/assets/image/github_icon.png';
 
 import curriculumVitae from '@/assets/document/Curriculum Vitae.pdf';
 
-let buttonClass = 'h-[50px] sm:h-fit w-full aspect-square flex flex-row rounded text-center items-center rounded bg-transparent transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
+let buttonClass = 'h-[50px] sm:h-fit w-full aspect-square flex flex-row rounded text-center items-center rounded transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
 let imageClass = 'w-[20px] h-[20px] sm:w-2/5 sm:h-2/5 m-[10px] sm:m-auto dark:invert';
 
 type Props = {
@@ -64,7 +64,7 @@ type Props = {
 
 
   return (
-    <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-all duration-300`} id='navbar'>
+    <div className={`h-[50px] w-full glass sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded shadow-sm sm:shadow-lg shadow-black sm:shadow-black overflow-hidden transition-all duration-300`} id='navbar'>
       
       {window.innerWidth <= 640 &&
       <div className='h-fit w-full flex item-center justify-center'>
@@ -76,21 +76,21 @@ type Props = {
 
         <div className='w-full h-fit flex flex-col item-center justify-center'>
         <div className={`w-full h-fit flex flex-row rounded text-center items-center `} >
-            <label className={`${buttonClass}`}>
+            <label className={`${buttonClass} ${option == "Home" ? "bg-[#7b3aff]" : "bg-transparent"}`}>
               <input type="radio" name="screen" value="Home" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
               <img src={home_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>Home</p> }
             </label>
           </div>
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
-            <label className={`${buttonClass}`}>
+            <label className={`${buttonClass} ${option == "About" ? "bg-[#7b3aff]" : "bg-transparent"}`}>
               <input type="radio" name="screen" value="About" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
               <img src={user_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>About</p> }
             </label>
           </div>
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
-            <label className={`${buttonClass}`}>
+            <label className={`${buttonClass} ${option == "Project" ? "bg-[#7b3aff]" : "bg-transparent"}`}>
               <input type="radio" name="screen" value="Project" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
               <img src={code_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>Project</p> }
@@ -105,16 +105,16 @@ type Props = {
         </div>
 
         <div className='w-full h-fit flex flex-row sm:flex-col item-center justify-between sm:justify-center'>
-          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('phone')}>
+          <button className={`${buttonClass} bg-transparent`} onClick={()=>handleNotification('phone')}>
             <img src={phone_icon} className={`${imageClass} m-auto`}/>
           </button>
-          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('email')}>
+          <button className={`${buttonClass} bg-transparent`} onClick={()=>handleNotification('email')}>
             <img src={email_icon} className={`${imageClass} m-auto`}/>
           </button>
-          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('linkdin')}>
+          <button className={`${buttonClass} bg-transparent`} onClick={()=>handleNotification('linkdin')}>
             <img src={linkdin_icon} className={`${imageClass} m-auto`}/>
           </button>
-          <button className={`${buttonClass} bg-[#5050a8] dark:bg-[#121231]`} onClick={()=>handleNotification('github')}>
+          <button className={`${buttonClass} bg-transparent`} onClick={()=>handleNotification('github')}>
             <img src={github_icon} className={`${imageClass} m-auto`}/>
           </button>
         </div>

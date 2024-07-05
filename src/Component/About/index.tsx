@@ -1,10 +1,25 @@
 import Carousel from '@/Component/Carousel'
+import CareerCard from '@/Component/CareerCard'
+import CareerCardDescription from '@/Types/CareerCardDescription';
 import { useEffect } from 'react';
 
-let boxStyle = `shadow-lg shadow-black rounded m-2`;
+let boxStyle = `shadow-lg shadow-black rounded m-2 glass`;
+
+let WorkCards :CareerCardDescription[] = [
+  {title: "Dayforce", startDate: 'Oct 2023', endDate: 'Ongoing'},
+  {title: "IQera", startDate: 'Oct 2022', endDate: 'Dec 2022'}
+];
+
+let EducationCards: CareerCardDescription[] = [
+  {title: "Bachelor's degree", startDate: 'Sep 2020', endDate: 'Dec 2023'},
+  {title: "High School Certificate", startDate: '', endDate: 'Dec 2019'}
+];
+
+let CertificationCards: CareerCardDescription[] = [
+  {title: "ISTQB CTFL 4.0", startDate: '', endDate: 'Mar 2024'}
+];
 
 const index = () => {
-
   useEffect(() => {
     function appear(){
       let subArea = document.getElementById('subScreenFrame');
@@ -45,40 +60,10 @@ const index = () => {
                     <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
 
-                  <div className='w-[95%] grid grid-rows-2 grid-cols-1 auto-rows-[45%] grid-flow-row m-auto'>
-
-                    <div className={`row-span-1 col-span-1 ${boxStyle}`}>
-                    <div className="flex m-4">
-                      <p>Work experience.</p><p className={`text-[#7b3aff]`}>txt</p>
-                    </div>
-                      <div className='m-4'>
-                        <div className='flex flex-col sm:flex-row justify-between'>
-                          <div><p className='font-bold text-[10px] sm:text-[12px]'>Dayforce</p></div>
-                          <div><p className='text-[#808080] text-[10px] sm:text-[12px]'>Oct 2023 - Ongoing</p></div>
-                        </div>
-                        <div className='flex flex-col sm:flex-row justify-between'>
-                          <div><p className='font-bold text-[10px] sm:text-[12px]'>IQera</p></div>
-                          <div><p className='text-[#808080] text-[10px] sm:text-[12px]'>Oct 2022 - Dec 2022</p></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className={`row-span-1 col-span-1 ${boxStyle}`}>
-                    <div className="flex m-4">
-                      <p>Education.</p><p className={`text-[#7b3aff]`}>txt</p>
-                    </div>
-                      <div className='m-4'>
-                        <div className='flex flex-col sm:flex-row justify-between'>
-                          <div><p className='font-bold text-[10px] sm:text-[12px]'>Bachelor's degree</p></div>
-                          <div><p className='text-[#808080] text-[10px] sm:text-[12px]'>Sep 2020 - Dec 2023</p></div>
-                        </div>
-                        <div className='flex flex-col sm:flex-row justify-between'>
-                          <div><p className='font-bold text-[10px] sm:text-[12px]'>High School Certificate</p></div>
-                          <div><p className='text-[#808080] text-[10px] sm:text-[12px]'>Dec 2019</p></div>
-                        </div>
-                      </div>
-                    </div>
-
+                  <div className='w-[95%] grid grid-cols-1 grid-flow-row m-auto'>
+                    <CareerCard title='Work Experience' content= {WorkCards}/>
+                    <CareerCard title='Education' content= {EducationCards}/>
+                    <CareerCard title='Certification' content= {CertificationCards}/>
                   </div>
                 </div>
             </div>

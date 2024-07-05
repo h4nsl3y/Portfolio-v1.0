@@ -889,8 +889,8 @@ video {
   resize: both;
 }
 
-.auto-cols-\[90vw\] {
-  grid-auto-columns: 90vw;
+.auto-cols-\[80\%\] {
+  grid-auto-columns: 80%;
 }
 
 .grid-flow-row {
@@ -935,6 +935,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -990,6 +994,11 @@ video {
 
 .bg-\[\#7b3aff80\] {
   background-color: #7b3aff80;
+}
+
+.bg-\[\#7b3aff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 58 255 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -1106,6 +1115,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.overline {
+  text-decoration-line: overline;
 }
 
 .decoration-1 {
@@ -1335,6 +1348,12 @@ html, body {
   mask: linear-gradient(0deg, transparent, white 10% , white 90%, transparent);
 }
 
+.glass{
+  background: rgba(80, 80, 168, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
 .rotate-item-1{
   animation: rotation 10s linear infinite;
   -webkit-animation: rotation 10s linear infinite;
@@ -1479,6 +1498,10 @@ html, body {
     grid-auto-rows: 50vh;
   }
 
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1497,6 +1520,10 @@ html, body {
 
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:overflow-hidden {
+    overflow: hidden;
   }
 
   .sm\:text-5xl {

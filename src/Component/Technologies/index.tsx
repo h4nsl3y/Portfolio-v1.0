@@ -35,7 +35,7 @@ const index = ({technologies}: Props) => {
 
   return (
     <div className='h-full w-full flex items-center justify-center'>
-        <ul className='w-full h-3/4 sm:h-full flex flex-row overflow-auto custom-scrollbar-h'>
+        <ul className='w-full h-3/4 sm:h-full flex flex-row overflow-auto custom-scrollbar-h justify-end'>
             { technologyList.includes('visualstudio') && <li className={`${listItemClass}`}><img src={VisualStudio} className={`${imageItemClass}`}/></li>} 
             { technologyList.includes('vscode') && <li className={`${listItemClass}`}><img src={VSCode} className={`${imageItemClass}`}/></li>} 
             { technologyList.includes('androidstudio') && <li className={`${listItemClass}`}><img src={AndroidStudio} className={`${imageItemClass}`}/></li>}

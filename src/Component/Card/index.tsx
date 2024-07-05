@@ -24,7 +24,7 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtLi
             </div>
             <div className='w-full h-1/2 sm:w-2/3 sm:h-full flex flex-col text-left items-center justify-center'>
                 <div className='object-fit '>
-                    <p className='text-[10px] md:text-[12px] mx-4 sm:m-4'>{description}</p> 
+                    <p className='text-[10px] md:text-[12px] mx-4 sm:m-4 text-left'>{description}</p> 
                 </div>
             </div>
         </div>
