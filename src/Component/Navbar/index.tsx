@@ -11,7 +11,7 @@ import github_icon from '@/assets/image/github_icon.png';
 
 import curriculumVitae from '@/assets/document/Curriculum Vitae.pdf';
 
-let buttonClass = 'h-[50px] sm:h-fit w-full aspect-square flex flex-row rounded text-center items-center rounded transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
+let buttonClass = 'h-[50px] sm:h-fit w-full aspect-square flex flex-row sm:rounded text-center items-center transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
 let imageClass = 'w-[20px] h-[20px] sm:w-2/5 sm:h-2/5 m-[10px] sm:m-auto dark:invert';
 
 type Props = {
@@ -64,7 +64,7 @@ type Props = {
 
 
   return (
-    <div className={`h-[50px] w-full glass sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded overflow-hidden transition-all duration-300`} id='navbar'>
+    <div className={`h-[50px] w-full sm:h-full sm:w-[5%] sm:max-w-[100px] flex flex-col justify-between rounded overflow-hidden transition-all duration-300 ${window.innerWidth <= 640 ? "" : "glass"}`} id='navbar'>
       
       {window.innerWidth <= 640 &&
       <div className='h-fit w-full flex item-center justify-center'>
