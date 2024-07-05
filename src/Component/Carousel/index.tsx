@@ -65,7 +65,7 @@ return (
             </button>
 
             <div className='w-3/4 aspect-square sm:aspect-[3/1] scroller overflow-hidden'>
-                <ul className='w-full h-full grid grid-flow-col items-center sm:overflow-hidden custom-scrollbar-h' id='gallery'>
+                <ul className='w-full h-full grid grid-flow-col items-center custom-scrollbar-h' id='gallery'>
                 <li className={`${listItemStyle}`}>
                         <div className={`${frameStyle}`}>
                             <img src={Java} className='h-3/5 aspect-square' draggable='true'/>          
