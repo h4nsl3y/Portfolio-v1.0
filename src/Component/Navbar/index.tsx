@@ -97,10 +97,10 @@ type Props = {
             </label>
           </div>
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
-            <a href={curriculumVitae} className={`${buttonClass}`} onClick={()=>{window.open('Curriculum Vitae.pdf', '_blank');}}>
+            <button className={`${buttonClass} bg-transparent`} onClick={()=>{window.open(curriculumVitae, '_blank');}}>
               <img src={document_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>Curriculum Vitae</p> }
-            </a>
+            </button>
           </div>
         </div>
 
