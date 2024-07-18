@@ -1,0 +1,25 @@
+{
+    "About" : "Few things are as enjoyable as the process of developing and testing software. This is why I have chosen to pursue my passion as my profession. I see myself as someone who never gives up in the face of challenges, but instead, turn these into opportunities through which I sharpen my skills. Considering myself a quick learner, I am confident in trying new things and can adapt easily to a new environment.",
+    "Career" : [
+        { 
+            "Section" : "Work Experience", 
+            "Content" : [
+                { "Title" : "Dayforce" , "EffectiveFrom" : "Oct 2023" , "EffectiveTo" : "Ongoing" },
+                { "Title" : "IQera" , "EffectiveFrom" : "Oct 2022" , "EffectiveTo" : "Dec 2022" }
+            ]
+        },
+        { 
+            "Section" : "Education", 
+            "Content" : [
+                { "Title" : "Bachelor's degree" , "EffectiveFrom" : "Sep 2020" , "EffectiveTo" : "Dec 2023" },
+                { "Title" : "High School Certificate" , "EffectiveFrom" : "" , "EffectiveTo" : "Dec 2019" }
+            ]
+        },
+        { 
+            "Section" : "Certification", 
+            "Content" : [
+                { "Title" : "ISTQB CTFL 4.0" , "EffectiveFrom" : "" , "EffectiveTo" : "Mar 2024" }
+            ]
+        }
+    ]
+}

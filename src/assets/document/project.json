@@ -1,0 +1,26 @@
+{
+
+    "Cards" : [
+        {
+            "ImagePath" : {"Path1" : "./src/assets/image/mockup/Portfolio_1.png", "Path2" : "./src/assets/image/mockup/Portfolio_2.png"},
+            "Title" : "Portfolio",
+            "Date" : "Jun 2024",
+            "Description" : "A online react portfolio use to present myself, my curriculum vitae and the different project made.",
+            "Technologies" : "vscode-html-css-javascript-typescript-react-vite"
+        },
+        {
+            "ImagePath" : {"Path1" : "./src/assets/image/mockup/SkillHub_1.png", "Path2" : "./src/assets/image/mockup/SkillHub_2.png"},
+            "Title" : "SkillHub",
+            "Date" : "Dec 2023",
+            "Description" : "Skill Hub is an employee training management portal that allows employees to enroll to courses.",
+            "Technologies" : "visualstudio-asp-csharp-html-css-javascript-mysql"
+        },
+        {
+            "ImagePath" : {"Path1" : "./src/assets/image/mockup/SER.jpg", "Path2" : ""},
+            "Title" : "Speech Emotion Recognition",
+            "Date" : "Jun 2023",
+            "Description" : "A mobile application that records the voice of the speaker or audio file and send the data to an online server, where they are analyzed by a multi-modal model created with Python using the Tensorflow library from which information is extract and send back to application to be present to user.",
+            "Technologies" : "pycharm-androidstudio-java-python-sqlite"
+        }
+    ]
+}

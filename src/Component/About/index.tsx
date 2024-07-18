@@ -1,23 +1,9 @@
 import Carousel from '@/Component/Carousel'
 import CareerCard from '@/Component/CareerCard'
-import CareerCardDescription from '@/Types/CareerCardDescription';
+import PersonalContent from '@/assets/document/personal.json';
 import { useEffect } from 'react';
 
 let boxStyle = `rounded m-2 sm:w-[95%] w-full glass`;
-
-let WorkCards :CareerCardDescription[] = [
-  {title: "Dayforce", startDate: 'Oct 2023', endDate: 'Ongoing'},
-  {title: "IQera", startDate: 'Oct 2022', endDate: 'Dec 2022'}
-];
-
-let EducationCards: CareerCardDescription[] = [
-  {title: "Bachelor's degree", startDate: 'Sep 2020', endDate: 'Dec 2023'},
-  {title: "High School Certificate", startDate: '', endDate: 'Dec 2019'}
-];
-
-let CertificationCards: CareerCardDescription[] = [
-  {title: "ISTQB CTFL 4.0", startDate: '', endDate: 'Mar 2024'}
-];
 
 const index = () => {
   useEffect(() => {
@@ -38,11 +24,7 @@ const index = () => {
                     <p>About.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
                   <div className="object-contains flex flex-col m-4 ">
-                    <p className="text-[10px] sm:text-[12px]">Few things are as enjoyable as the process of developing and testing software.
-                    This is why I have chosen to pursue my passion as my profession.
-                    I see myself as someone who never gives up in the face of challenges, but instead,
-                    turn these into opportunities through which I sharpen my skills. Considering myself
-                    a quick learner, I am confident in trying new things and can adapt easily to a new environment.</p>
+                    <p className="text-[10px] sm:text-[12px]">{PersonalContent.About}</p>
                   </div>
                 </div>
 
@@ -61,9 +43,12 @@ const index = () => {
                   </div>
 
                   <div className='w-[95%] grid grid-cols-1 grid-flow-row m-auto'>
-                    <CareerCard title='Work Experience' content= {WorkCards}/>
-                    <CareerCard title='Education' content= {EducationCards}/>
-                    <CareerCard title='Certification' content= {CertificationCards}/>
+                  {PersonalContent.Career.map((CareerCards, index) => (
+                      <div key={`CareerCard-${index}`} className={`row-span-1 col-span-1 ${boxStyle} `}>
+                          <CareerCard title={CareerCards.Section} content= {CareerCards.Content}/>
+                      </div>
+                    ))}
+
                   </div>
                 </div>
             </div>

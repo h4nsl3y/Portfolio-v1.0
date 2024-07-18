@@ -1,5 +1,5 @@
 export default interface CareerCardDescription {
-    title: String,
-    startDate: String,
-    endDate: String
+    Title: String,
+    EffectiveFrom: String,
+    EffectiveTo: String
   }

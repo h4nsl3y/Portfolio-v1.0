@@ -1,11 +1,9 @@
 import { useEffect,useRef } from 'react';
 import NotificationType from '@/Types/NotificationType';
 
-
 type Props = {
   notificationContent: NotificationType;
 }
-
 
 const index = ({notificationContent}: Props) => {
 
@@ -77,7 +75,6 @@ const index = ({notificationContent}: Props) => {
               }
           </div> 
         </div>
-
       </div>
     </div>
   )

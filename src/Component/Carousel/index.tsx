@@ -1,20 +1,6 @@
 import fowardArrow from '@/assets/image/forward_arrow_icon.png';
 import backArrow from '@/assets/image/back_arrow_icon.png';
-
-import Java from "@/assets/image/icon/java-original.svg";
-import Python from "@/assets/image/icon//python-original.svg";
-import CSharp from "@/assets/image/icon/csharp-original.svg";
-import HTML5 from "@/assets/image/icon/html5-original.svg";
-import CSS3 from "@/assets/image/icon/css3-original.svg";
-import Javascript from "@/assets/image/icon/javascript-plain.svg";
-import TypeScript from "@/assets/image/icon/typescript-plain.svg";
-import Selenium from "@/assets/image/icon/selenium-original.svg";
-import Cucumber from "@/assets/image/icon/cucumber-plain.svg";
-import GitHub from "@/assets/image/icon/github-original.svg";
-import Git from "@/assets/image/icon/git-plain.svg";
-import AzureDevOps from "@/assets/image/icon/azuredevops-original.svg";
-import MySQL from "@/assets/image/icon/mysql-original.svg";
-import SQLite from "@/assets/image/icon/sqlite-original.svg";
+import TechnologyContent from '@/assets/document/technology.json'
 
 let buttonClass = 'h-1/2 aspect-square flex item-center justify-center rounded bg-transparent transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] active:bg-[#7b3aff] ';
 let image_style: string = 'w-2/5 aspect-square dark:invert m-auto';
@@ -66,90 +52,14 @@ return (
 
             <div className='w-3/4 aspect-square sm:aspect-[3/1] scroller overflow-hidden'>
                 <ul className='w-full h-full grid grid-flow-col items-center custom-scrollbar-h' id='gallery'>
-                <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={Java} className='h-3/5 aspect-square' draggable='true'/>          
-                            <p className={`${frameTextStyle}`}>Java</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={Python} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>Python</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={CSharp} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>C#</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={HTML5} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>HTML5</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={CSS3} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>CSS3</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={Javascript} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>JavaScript</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={TypeScript} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>TypeScript</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={Selenium} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>Selenium</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={Cucumber} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>Gherkin</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={GitHub}  className='h-3/5 aspect-square invert' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>GitHub</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={Git}  className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>Git</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={AzureDevOps} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>AzureDevOps</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={MySQL} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>MySQL</p>
-                        </div>
-                    </li>
-                    <li className={`${listItemStyle}`}>
-                        <div className={`${frameStyle}`}>
-                            <img src={SQLite} className='h-3/5 aspect-square' draggable='true'/>
-                            <p className={`${frameTextStyle}`}>SQLite</p>
-                        </div>
-                    </li>
+                    {TechnologyContent.Technologies.map((technologies, index) => (
+                        <li className={`${listItemStyle}`} key={`Carousel-${index}`}>
+                            <div className={`${frameStyle}`}>
+                                <img src={technologies.Path} className='h-3/5 aspect-square' draggable='true'/>          
+                                <p className={`${frameTextStyle}`}>{technologies.Name}</p>
+                            </div>
+                        </li>
+                    ))}
                 </ul>
             </div>
            
