@@ -43,7 +43,7 @@ const index = () => {
                   <div className="flex m-4">
                     <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
-
+                  
                   <div className={`w-full h-[68vh] custom-scrollbar`}>
                     <div className={`w-[95%] grid grid-cols-1 grid-flow-row m-auto`}>
                     {career.map((CareerCards, index) => (

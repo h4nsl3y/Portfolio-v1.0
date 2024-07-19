@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Background from './Component/Background';
 import Navbar from '@/Component/Navbar';
 import SectionArea from '@/Component/SectionArea'
 import Notification from '@/Component/Notification'
