@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NotificationType from '@/Types/NotificationType'
+import Background from './Component/Background';
 import Navbar from '@/Component/Navbar';
 import SectionArea from '@/Component/SectionArea'
 import Notification from '@/Component/Notification'
@@ -17,6 +17,7 @@ function App() {
 
     return (
       <div className={`h-screen w-screen bg-[#5050a8] text-black dark:bg-[#121231] dark:text-white flex items-center justify-center`}>
+
         <div className={`h-full sm:h-[90%] w-full sm:w-[90%] flex flex-col sm:flex-row items-center justify-between `}>
             <Navbar option={selectedOption} setOption={setSelectedOption} setNotification={setNotification}/>
             <SectionArea option={selectedOption}/>

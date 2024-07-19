@@ -44,10 +44,10 @@ const index = () => {
                     <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
 
-                  <div className={`w-full sm:h-[65vh] sm:custom-scrollbar`}>
+                  <div className={`w-full h-[65vh] custom-scrollbar`}>
                     <div className={`w-[95%] grid grid-cols-1 grid-flow-row m-auto`}>
                     {career.map((CareerCards, index) => (
-                        <div key={`CareerCard-${index}`} className={`row-span-1 col-span-1 ${boxStyle} `}>
+                        <div key={`CareerCard-${index}`} className={`row-span-1 col-span-1 ${boxStyle} sm:mx-4 my-4`}>
                             <CareerCard title={CareerCards.Section} content= {CareerCards.Content}/>
                         </div>
                       ))}

@@ -11,7 +11,7 @@ const Background = () => {
     function setSize(){
       document.querySelectorAll(".circle").forEach((element , index: number) => {
         (element as HTMLDivElement).style.width = `${difference * (index + 1)}px`;
-        (element as HTMLDivElement).style.border = `${borderSize}px solid rgba(255,255,255,0.05)`;
+        (element as HTMLDivElement).style.border = `${borderSize}px solid rgba(80, 80, 168, 0.25)`;
         (element as HTMLDivElement).style.borderLeft = `${borderSize}px solid transparent`;
         (element as HTMLDivElement).style.borderRight = `${borderSize}px solid transparent`;
       });  
@@ -30,6 +30,7 @@ const Background = () => {
         <div className={`${rotators_class} anti-rotate-item-2`}></div>
         <div className={`${rotators_class} rotate-item-2`}></div>
         <div className={`${rotators_class} anti-rotate-item-1`}></div>
+
         <script></script>
     </div>
   );
