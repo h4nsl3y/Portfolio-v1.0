@@ -1,7 +1,8 @@
 import fowardArrow from '@/assets/image/forward_arrow_icon.png';
 import backArrow from '@/assets/image/back_arrow_icon.png';
-import TechnologyContent from '@/assets/document/technology.json'
+import Data from '@/assets/document/Data.json'
 
+let technology = Data.Technologies;
 let buttonClass = 'h-1/2 aspect-square flex item-center justify-center rounded bg-transparent transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] active:bg-[#7b3aff] ';
 let image_style: string = 'w-2/5 aspect-square dark:invert m-auto';
 let listItemStyle: string = 'h-full aspect-square flex items-center justify-center';
@@ -52,7 +53,7 @@ return (
 
             <div className='w-3/4 aspect-square sm:aspect-[3/1] scroller overflow-hidden'>
                 <ul className='w-full h-full grid grid-flow-col items-center custom-scrollbar-h' id='gallery'>
-                    {TechnologyContent.Technologies.map((technologies, index) => (
+                    {technology.map((technologies, index) => (
                         <li className={`${listItemStyle}`} key={`Carousel-${index}`}>
                             <div className={`${frameStyle}`}>
                                 <img src={technologies.Path} className='h-3/5 aspect-square' draggable='true'/>          

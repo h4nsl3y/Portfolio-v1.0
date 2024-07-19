@@ -13,7 +13,7 @@ import './App.css'
 function App() {
   
     const [selectedOption, setSelectedOption] = useState<string>('Home');
-    const [notificationContent, setNotification] = useState<NotificationType>({title:"",contentType:"text",content:""})
+    const [notificationContent, setNotification] = useState<string>("");
 
     return (
       <div className={`h-screen w-screen bg-[#5050a8] text-black dark:bg-[#121231] dark:text-white flex items-center justify-center`}>
@@ -21,7 +21,7 @@ function App() {
             <Navbar option={selectedOption} setOption={setSelectedOption} setNotification={setNotification}/>
             <SectionArea option={selectedOption}/>
         </div>
-        <Notification notificationContent={notificationContent}/>
+        <Notification notificationId={notificationContent} setNotification={setNotification}/>
       </div>
     )
 }

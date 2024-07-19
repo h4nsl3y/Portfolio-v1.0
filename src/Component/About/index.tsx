@@ -1,8 +1,10 @@
 import Carousel from '@/Component/Carousel'
 import CareerCard from '@/Component/CareerCard'
-import PersonalContent from '@/assets/document/personal.json';
+import Data from '@/assets/document/Data.json';
 import { useEffect } from 'react';
 
+let resume = Data.About;
+let career = Data.Career; 
 let boxStyle = `rounded m-2 sm:w-[95%] w-full glass`;
 
 const index = () => {
@@ -24,7 +26,7 @@ const index = () => {
                     <p>About.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
                   <div className="object-contains flex flex-col m-4 ">
-                    <p className="text-[10px] sm:text-[12px]">{PersonalContent.About}</p>
+                    <p className="text-[10px] sm:text-[12px]">{resume}</p>
                   </div>
                 </div>
 
@@ -43,7 +45,7 @@ const index = () => {
                   </div>
 
                   <div className='w-[95%] grid grid-cols-1 grid-flow-row m-auto'>
-                  {PersonalContent.Career.map((CareerCards, index) => (
+                  {career.map((CareerCards, index) => (
                       <div key={`CareerCard-${index}`} className={`row-span-1 col-span-1 ${boxStyle} `}>
                           <CareerCard title={CareerCards.Section} content= {CareerCards.Content}/>
                       </div>

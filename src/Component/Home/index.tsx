@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 let coloredLetters: string ='w-fit h-fit bg-gradient-to-r from-[#00ffff] to-[#ff00ff] bg-clip-text text-transparent text-center';
 
 const index = () => {
-  
   useEffect(() => {
     function appear(){
       let subArea = document.getElementById('subScreenFrame');
