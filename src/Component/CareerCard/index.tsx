@@ -2,7 +2,7 @@
 import CareerCardContent from "@/Component/CareerCardContent"
 import CareerCardDescription from "@/Types/CareerCardDescription";
 
-type CareerCardType = {
+interface CareerCardType {
     title: String,
     content: CareerCardDescription[]
   }

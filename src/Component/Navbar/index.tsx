@@ -12,7 +12,7 @@ import curriculumVitae from '@/assets/document/Curriculum Vitae.pdf';
 let buttonClass = 'h-[50px] sm:h-fit w-full aspect-square flex flex-row sm:rounded text-center items-center transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] hover:shadow-lg hover:shadow-black active:bg-[#7b3aff] ';
 let imageClass = 'w-[20px] h-[20px] sm:w-2/5 sm:h-2/5 m-[10px] sm:m-auto dark:invert';
 
-type Props = {
+interface Props{
   option: string;
   setOption: React.Dispatch<React.SetStateAction<string>>;
   setNotification: React.Dispatch<React.SetStateAction<string>>;

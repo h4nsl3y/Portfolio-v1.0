@@ -6,14 +6,14 @@
             "Title" : "Portfolio",
             "Date" : "Jun 2024",
             "Description" : "A online react portfolio use to present myself, my curriculum vitae and the different project made.",
-            "Technologies" : "vscode-html-css-javascript-typescript-react-vite"
+            "Technologies" : "vscode-html5-css3-javascript-typescript-react-vite"
         },
         {
             "ImagePath" : {"Path1" : "/src/assets/image/mockup/SkillHub_1.png", "Path2" : "/src/assets/image/mockup/SkillHub_2.png"},
             "Title" : "SkillHub",
             "Date" : "Dec 2023",
             "Description" : "Skill Hub is an employee training management portal that allows employees to enroll to courses.",
-            "Technologies" : "visualstudio-asp-csharp-html-css-javascript-mysql"
+            "Technologies" : "visualstudio-asp-csharp-html5-css3-javascript-mysql"
         },
         {
             "ImagePath" : {"Path1" : "/src/assets/image/mockup/SER.jpg", "Path2" : ""},

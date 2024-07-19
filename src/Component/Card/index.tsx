@@ -1,6 +1,6 @@
 import Technologies from "@/Component/Technologies"
 
-type Props = {
+interface Props{
     imagePath_1: string ;
     imagePath_2: string ;
     title:string;

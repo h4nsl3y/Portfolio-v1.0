@@ -4,7 +4,7 @@ import NotificationType from '@/Types/NotificationType';
 
 let notificationContent = Data.Notification;
 
-type Props = {
+interface Props {
   notificationId: String,
   setNotification: React.Dispatch<React.SetStateAction<string>>;
 }

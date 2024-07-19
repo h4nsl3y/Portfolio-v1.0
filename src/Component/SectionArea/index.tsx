@@ -3,7 +3,7 @@ import About from '@/Component/About'
 import Project from '@/Component/Project'
 import '@/output.css'
 
-type Props = {
+interface Props{
   option: string;
 }
 
