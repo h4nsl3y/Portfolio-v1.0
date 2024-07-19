@@ -1,6 +1,6 @@
 import Carousel from '@/Component/Carousel'
 import CareerCard from '@/Component/CareerCard'
-import Data from '@/assets/document/Data.json';
+import Data from '@/assets/document/Data.tsx';
 import { useEffect } from 'react';
 
 let resume = Data.About;
@@ -38,12 +38,10 @@ const index = () => {
                     <Carousel/>
                   </div>
                 </div>
-
                 <div className={`row-span-2 col-span-1 m-2 ${boxStyle}`}>
                   <div className="flex m-4">
                     <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
-                  
                   <div className={`w-full h-[68vh] custom-scrollbar`}>
                     <div className={`w-[95%] grid grid-cols-1 grid-flow-row m-auto`}>
                     {career.map((CareerCards, index) => (
@@ -53,7 +51,6 @@ const index = () => {
                       ))}
                     </div>
                   </div>
-                  
                 </div>
             </div>
         </div>

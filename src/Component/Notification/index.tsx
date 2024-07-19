@@ -1,5 +1,5 @@
 import { useEffect,useRef } from 'react';
-import Data from '@/assets/document/Data.json'
+import Data from '@/assets/document/Data.tsx'
 import NotificationType from '@/Types/NotificationType';
 
 let notificationContent = Data.Notification;

@@ -1,5 +1,5 @@
 import Card from '@/Component/Card'
-import Data from '@/assets/document/Data.json'
+import Data from '@/assets/document/Data.tsx'
 import { useEffect } from 'react'
 
 let cards = Data.Cards;

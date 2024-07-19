@@ -1,6 +1,6 @@
 import fowardArrow from '@/assets/image/forward_arrow_icon.png';
 import backArrow from '@/assets/image/back_arrow_icon.png';
-import Data from '@/assets/document/Data.json'
+import Data from '@/assets/document/Data.tsx'
 
 let technology = Data.Technologies;
 let buttonClass = 'h-1/2 aspect-square flex item-center justify-center rounded bg-transparent transition-colors duration-300 ease-in-out hover:bg-[#7b3aff80] active:bg-[#7b3aff] ';

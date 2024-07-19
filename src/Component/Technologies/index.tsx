@@ -1,6 +1,6 @@
 
 
-import Data from "@/assets/document/Data.json"
+import Data from "@/assets/document/Data.tsx"
 
 let techImage = Data.Technologies;
 let listItemClass = "h-full sm:h-full aspect-square flex items-center justify-center";
