@@ -43,12 +43,6 @@
             "Content" : [
                 { "Title" : "ISTQB CTFL 4.0" , "EffectiveFrom" : "" , "EffectiveTo" : "Mar 2024" }
             ]
-        },
-        { 
-            "Section" : "Certification", 
-            "Content" : [
-                { "Title" : "ISTQB CTFL 4.0" , "EffectiveFrom" : "" , "EffectiveTo" : "Mar 2024" }
-            ]
         }
     ],
 
