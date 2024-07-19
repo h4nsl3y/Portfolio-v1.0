@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 let resume = Data.About;
 let career = Data.Career; 
-let boxStyle = `rounded m-2 sm:w-[95%] w-full glass`;
+let boxStyle = `rounded sm:w-[95%] w-full glass`;
 
 const index = () => {
   useEffect(() => {
@@ -21,7 +21,7 @@ const index = () => {
         <div className="h-full w-full flex">
             <div className="h-[90vh] sm:h-[90%] w-[95%] grid grid-rows-[45vh_45vh_45vh] grid-cols-[90vw] sm:grid-cols-2 sm:grid-rows-2 grid-flow-row sm:grid-flow-col m-auto custom-scrollbar">
                 
-                <div className={`row-span-1 col-span-1 ${boxStyle}`}>
+                <div className={`row-span-1 col-span-1 m-2 ${boxStyle}`}>
                   <div className="flex m-4">
                     <p>About.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
@@ -30,7 +30,7 @@ const index = () => {
                   </div>
                 </div>
 
-                <div className={`row-span-1 col-span-1 ${boxStyle} flex flex-col justify-between`}>
+                <div className={`row-span-1 col-span-1 m-2 ${boxStyle} flex flex-col justify-between`}>
                   <div className="flex m-4">
                     <p>Technology.</p><p className={`text-[#7b3aff]`}>js</p>
                   </div>
@@ -39,19 +39,21 @@ const index = () => {
                   </div>
                 </div>
 
-                <div className={`row-span-2 col-span-1 ${boxStyle}`}>
+                <div className={`row-span-2 col-span-1 m-2 ${boxStyle}`}>
                   <div className="flex m-4">
                     <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
 
-                  <div className='w-[95%] grid grid-cols-1 grid-flow-row m-auto'>
-                  {career.map((CareerCards, index) => (
-                      <div key={`CareerCard-${index}`} className={`row-span-1 col-span-1 ${boxStyle} `}>
-                          <CareerCard title={CareerCards.Section} content= {CareerCards.Content}/>
-                      </div>
-                    ))}
-
+                  <div className={`w-full sm:h-[65vh] sm:custom-scrollbar`}>
+                    <div className={`w-[95%] grid grid-cols-1 grid-flow-row m-auto`}>
+                    {career.map((CareerCards, index) => (
+                        <div key={`CareerCard-${index}`} className={`row-span-1 col-span-1 ${boxStyle} `}>
+                            <CareerCard title={CareerCards.Section} content= {CareerCards.Content}/>
+                        </div>
+                      ))}
+                    </div>
                   </div>
+                  
                 </div>
             </div>
         </div>

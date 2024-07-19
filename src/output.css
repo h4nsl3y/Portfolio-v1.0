@@ -1241,6 +1241,7 @@ html, body {
 
 .custom-scrollbar {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -1264,6 +1265,7 @@ html, body {
 
 .custom-scrollbar-h {
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .custom-scrollbar-h::-webkit-scrollbar {
@@ -1401,6 +1403,10 @@ html, body {
 
   .sm\:h-2\/5 {
     height: 40%;
+  }
+
+  .sm\:h-\[65vh\] {
+    height: 65vh;
   }
 
   .sm\:h-\[90\%\] {

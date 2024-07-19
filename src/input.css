@@ -20,6 +20,7 @@ html, body {
   }
   .custom-scrollbar {
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .custom-scrollbar::-webkit-scrollbar {
     width: 5px;
@@ -38,6 +39,7 @@ html, body {
   }
   .custom-scrollbar-h {
     overflow-x: auto;
+    overflow-y: hidden;
   }
   .custom-scrollbar-h::-webkit-scrollbar {
     height: 5px;
