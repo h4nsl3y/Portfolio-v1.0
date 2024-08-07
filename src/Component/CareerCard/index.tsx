@@ -1,4 +1,3 @@
-
 import CareerCardContent from "@/Component/CareerCardContent"
 import CareerCardDescription from "@/Types/CareerCardDescription";
 

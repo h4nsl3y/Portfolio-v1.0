@@ -31,6 +31,11 @@ import SkillHub_2 from "@/assets/image/mockup/SkillHub_2.png";
 import SER_1 from "@/assets/image/mockup/SER.jpg";
 
 export default {
+    "Home" : {
+        "FirstLine" : "Hello, I am",
+        "ColoredLine" : "Hansley Louis Eleonore",
+        "LastLine" : "Software engineer in test"
+    },
     "About" : "Few things are as enjoyable as the process of developing and testing software. This is why I have chosen to pursue my passion as my profession. I see myself as someone who never gives up in the face of challenges, but instead, turn these into opportunities through which I sharpen my skills. Considering myself a quick learner, I am confident in trying new things and can adapt easily to a new environment.",
     "Cards" : [
         {
