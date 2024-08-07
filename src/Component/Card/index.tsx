@@ -1,5 +1,8 @@
 import Technologies from "@/Component/Technologies"
 
+
+let contentText = `text-[10px] sm:text-[12px] xl:text-[16px]`;
+
 interface Props{
     imagePath_1: string ;
     imagePath_2: string ;
@@ -14,8 +17,8 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtLi
   return (
     <div className='w-full h-full'>
         <div className='w-full h-1/6 flex justify-between'>
-            <div><p className='m-2'>{title}</p></div>
-            <div><p className='text-[#808080] m-2'>{date}</p></div>
+            <div><p className={`${contentText} m-2`}>{title}</p></div>
+            <div><p className={`${contentText} m-2`}>{date}</p></div>
         </div>
         <div className='w-full h-4/6 flex flex-col sm:flex-row'>
             <div className={`h-1/2 w-full sm:w-1/3 sm:h-full flex flex-col`}>
@@ -24,7 +27,7 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtLi
             </div>
             <div className={`w-full h-1/2 sm:w-2/3 sm:h-full flex flex-col text-left items-center justify-center`}>
                 <div className = {`object-fit`}>
-                    <p className='text-[10px] md:text-[12px] mx-4 sm:m-4 text-left'>{description}</p> 
+                    <p className={`${contentText} mx-4 sm:m-4 text-left`}>{description}</p> 
                 </div>
             </div>
         </div>

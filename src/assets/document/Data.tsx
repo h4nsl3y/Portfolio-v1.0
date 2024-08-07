@@ -49,7 +49,7 @@ export default {
             "ImagePath" : {"Path1" : SkillHub_1, "Path2" : SkillHub_2},
             "Title" : "SkillHub",
             "Date" : "Dec 2023",
-            "Description" : "Skill Hub is an employee training management portal that allows employees to enroll to courses.",
+            "Description" : "A web application written using HTML, CSS and JavaScript for the front end, C# with repository model for the back-end logic and SQL and MySQL for the database interactions, the application was hosted locally via IIS. Skill Hub is an employee training management portal that allows employees to enroll to courses in near future, where each request will require an approval of their respective manager and prioritized the employee department-wise.",
             "Technologies" : "visualstudio-asp-csharp-html5-css3-javascript-mysql"
         },
         {

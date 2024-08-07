@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 let resume = Data.About;
 let career = Data.Career; 
 let boxStyle = `rounded sm:w-[95%] w-full glass`;
+let titleText = `text-[12x] sm:text-[14px] 2xl:text-[22px]`;
+let contentText = `text-[10px] sm:text-[12px] xl:text-[16px] 2xl:text-[19px]`;
 
 const index = () => {
   useEffect(() => {
@@ -22,16 +24,16 @@ const index = () => {
             <div className="h-[90vh] sm:h-[90%] w-[95%] grid grid-rows-[45vh_45vh_45vh] grid-cols-[90vw] sm:grid-cols-2 sm:grid-rows-2 grid-flow-row sm:grid-flow-col m-auto custom-scrollbar">
                 
                 <div className={`row-span-1 col-span-1 m-2 ${boxStyle}`}>
-                  <div className="flex m-4">
+                  <div className={`flex m-4 ${titleText}`}>
                     <p>About.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
-                  <div className="object-contains flex flex-col m-4 ">
-                    <p className="text-[10px] sm:text-[12px]">{resume}</p>
+                  <div className="flex flex-col m-4 custom-scrollbar">
+                    <p className={contentText }>{resume}</p>
                   </div>
                 </div>
 
                 <div className={`row-span-1 col-span-1 m-2 ${boxStyle} flex flex-col justify-between`}>
-                  <div className="flex m-4">
+                  <div className={`flex m-4 ${titleText}`}>
                     <p>Technology.</p><p className={`text-[#7b3aff]`}>js</p>
                   </div>
                   <div className="flex flex-col text-center items-center justify-center mx-4 my-auto">
@@ -39,7 +41,7 @@ const index = () => {
                   </div>
                 </div>
                 <div className={`row-span-2 col-span-1 m-2 ${boxStyle}`}>
-                  <div className="flex m-4">
+                  <div className={`flex m-4 ${titleText}`}>
                     <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
                   <div className={`w-full h-[68vh] custom-scrollbar`}>

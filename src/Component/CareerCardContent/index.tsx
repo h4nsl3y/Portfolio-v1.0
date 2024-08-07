@@ -1,10 +1,12 @@
-import CareerCardDescription from "@/Types/CareerCardDescription"
+import CareerCardDescription from "@/Types/CareerCardDescription";
+
+let contentText = `text-[10px] sm:text-[12px] xl:text-[16px]`;
 
 const index = ({Title, EffectiveFrom, EffectiveTo}: CareerCardDescription) => {
 return (
     <div className='flex flex-col sm:flex-row justify-between'>
-        <div><p className='text-[10px] sm:text-[12px]'>{Title}</p></div>
-        <div><p className='text-[#808080] text-[10px] sm:text-[12px]'>{EffectiveFrom} - {EffectiveTo}</p></div>
+        <div><p className={contentText}>{Title}</p></div>
+        <div><p className = {`text-[#808080] ${contentText}`}>{EffectiveFrom} - {EffectiveTo}</p></div>
     </div>
     )
 }
