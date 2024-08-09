@@ -1,7 +1,7 @@
 import Technologies from "@/Component/Technologies"
 
 
-let contentText = `text-[10px] sm:text-[12px] xl:text-[16px]`;
+let contentText = `text-[10px] sm:text-[12px] 2xl:text-[16px]`;
 
 interface Props{
     imagePath_1: string ;
