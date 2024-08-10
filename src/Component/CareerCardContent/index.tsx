@@ -1,6 +1,6 @@
 import CareerCardDescription from "@/Types/CareerCardDescription";
 
-let contentText = `text-[10px] sm:text-[12px] xl:text-[16px]`;
+let contentText = `text-[10px] sm:text-[12px]`;
 
 const index = ({Title, EffectiveFrom, EffectiveTo}: CareerCardDescription) => {
 return (

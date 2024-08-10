@@ -1,7 +1,7 @@
 import CareerCardContent from "@/Component/CareerCardContent"
 import CareerCardDescription from "@/Types/CareerCardDescription";
 
-let contentText = `text-[10px] sm:text-[12px] xl:text-[16px]`;
+let contentText = `text-[10px] sm:text-[12px]`;
 
 interface CareerCardType {
     title: String,
