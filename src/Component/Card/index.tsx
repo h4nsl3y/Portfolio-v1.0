@@ -1,6 +1,5 @@
 import Technologies from "@/Component/Technologies"
 
-
 let contentText = `text-[10px] sm:text-[12px]`;
 
 interface Props{
@@ -15,7 +14,7 @@ interface Props{
 const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtList}: Props) => {
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full sm:m-2'>
         <div className='w-full h-1/6 flex justify-between'>
             <div><p className={`${contentText} m-2`}>{title}</p></div>
             <div><p className={`${contentText} m-2`}>{date}</p></div>
@@ -31,7 +30,7 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtLi
                 </div>
             </div>
         </div>
-        <div className='w-full h-1/6'>
+        <div className='w-full h-1/6 bottom-0'>
             <Technologies technologies={technologtList}/>
         </div>
     </div>

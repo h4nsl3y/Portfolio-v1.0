@@ -648,6 +648,10 @@ video {
   position: sticky;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .bottom-3 {
   bottom: 0.75rem;
 }
@@ -808,8 +812,8 @@ video {
   height: 20px;
 }
 
-.h-\[40vh\] {
-  height: 40vh;
+.h-\[25vh\] {
+  height: 25vh;
 }
 
 .h-\[45\%\] {
@@ -841,30 +845,6 @@ video {
   height: 100vh;
 }
 
-.h-\[30vh\] {
-  height: 30vh;
-}
-
-.h-\[25vh\] {
-  height: 25vh;
-}
-
-.h-\[vh\] {
-  height: vh;
-}
-
-.h-\[85vh\] {
-  height: 85vh;
-}
-
-.h-\[85\%\] {
-  height: 85%;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
 .w-2\/5 {
   width: 40%;
 }
@@ -883,10 +863,6 @@ video {
 
 .w-\[20px\] {
   width: 20px;
-}
-
-.w-\[90\%\] {
-  width: 90%;
 }
 
 .w-\[95\%\] {
@@ -1444,6 +1420,10 @@ html, body {
     right: 0.75rem;
   }
 
+  .sm\:m-2 {
+    margin: 0.5rem;
+  }
+
   .sm\:m-4 {
     margin: 1rem;
   }
@@ -1469,10 +1449,6 @@ html, body {
     height: 40%;
   }
 
-  .sm\:h-\[85\%\] {
-    height: 85%;
-  }
-
   .sm\:h-\[90\%\] {
     height: 90%;
   }
@@ -1484,6 +1460,10 @@ html, body {
 
   .sm\:h-full {
     height: 100%;
+  }
+
+  .sm\:h-\[80\%\] {
+    height: 80%;
   }
 
   .sm\:w-1\/3 {
