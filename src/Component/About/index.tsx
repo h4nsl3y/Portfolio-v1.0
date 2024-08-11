@@ -27,8 +27,8 @@ const index = () => {
                   <div className={`flex m-4 ${titleText}`}>
                     <p>About.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
-                  <div className="flex flex-col m-4 custom-scrollbar">
-                    <p className={contentText }>{resume}</p>
+                  <div className="h-[25vh] m-4 custom-scrollbar">
+                    <p className={`${contentText}`}>{resume}</p>
                   </div>
                 </div>
 
