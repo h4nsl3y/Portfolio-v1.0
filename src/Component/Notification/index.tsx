@@ -67,7 +67,7 @@ const index = ({notificationId, setNotification}: Props) => {
   }, [notificationData]);
 
   return (
-    <div className='h-fit w-fit absolute bottom-3  z-[15] self-center sm:right-3' id='notificationPane'>
+    <div className='h-fit w-fit absolute z-[15] top-3 self-center' id='notificationPane'>
       <div className='h-fit w-fit flex items-center justify-center'>
 
         <div className='f-full w-full glass rounded flex bg-[#5050a8] text-black dark:bg-[#7b3aff80] dark:text-white items-center justify-center transition-opacity opacity-0 invisible ease-in-out duration-500' id="notificationBody">
