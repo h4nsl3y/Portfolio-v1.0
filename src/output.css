@@ -849,6 +849,14 @@ video {
   height: 25vh;
 }
 
+.h-\[vh\] {
+  height: vh;
+}
+
+.h-\[85vh\] {
+  height: 85vh;
+}
+
 .w-2\/5 {
   width: 40%;
 }

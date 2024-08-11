@@ -21,8 +21,7 @@ const index = () => {
                 <div className={`${titleText} flex m-4`}>
                   <p>Project.</p><p className={`text-[#7b3aff]`}>txt</p>
                 </div>
-
-                <div className="h-[90vh] sm:h-[85%] w-[95%] grid auto-rows-[90vh] auto-cols-[90vw] sm:auto-cols-[80%] sm:auto-rows-[50vh] sm:grid-cols-1 grid-flow-row m-auto custom-scrollbar">
+                <div className="h-[85vh] sm:h-[85%] w-[95%] grid auto-rows-[90vh] auto-cols-[90vw] sm:auto-cols-[80%] sm:auto-rows-[50vh] sm:grid-cols-1 grid-flow-row m-auto custom-scrollbar">
                   {cards.map((cardData, index) => (
                     <div key={`card-${index}`} className={`row-span-1 col-span-1 ${boxStyle}`}>
                         <Card  
