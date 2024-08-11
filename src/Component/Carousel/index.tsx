@@ -51,7 +51,7 @@ return (
                 <img src={backArrow} className={`w-4/5 ${image_style}`} />
             </button>
 
-            <div className='w-3/4 aspect-square sm:aspect-[3/1] scroller overflow-hidden'>
+            <div className='w-3/4 aspect-square sm:aspect-[3/1] scroller-fade-h overflow-hidden'>
                 <ul className='w-full h-full grid grid-flow-col items-center custom-scrollbar-h ' id='gallery'>
                     {technology.map((technologies, index) => (
                         <li className={`${listItemStyle}`} key={`Carousel-${index}`}>
