@@ -4,7 +4,6 @@ import { useEffect } from 'react'
 
 let cards = Data.Cards;
 let titleText = `text-[12x] sm:text-[14px]`;
-let boxStyle = `rounded m-2 sm:w-[95%] w-full glass`;
 
 const index = () => {
     useEffect(() => {
