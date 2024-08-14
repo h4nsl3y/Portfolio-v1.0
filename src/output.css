@@ -1449,6 +1449,10 @@ html, body {
     height: 40%;
   }
 
+  .sm\:h-\[80\%\] {
+    height: 80%;
+  }
+
   .sm\:h-\[90\%\] {
     height: 90%;
   }
@@ -1460,10 +1464,6 @@ html, body {
 
   .sm\:h-full {
     height: 100%;
-  }
-
-  .sm\:h-\[80\%\] {
-    height: 80%;
   }
 
   .sm\:w-1\/3 {
