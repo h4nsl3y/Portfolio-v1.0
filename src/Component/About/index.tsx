@@ -5,9 +5,9 @@ import { useEffect } from 'react';
 
 let resume = Data.About;
 let career = Data.Career; 
-let boxStyle = `rounded sm:w-[95%] w-full glass`;
-let titleText = `text-[12x] sm:text-[14px] `;
-let contentText = `text-[10px] sm:text-[12px]`;
+let boxStyle: string = `rounded sm:w-[95%] w-full glass`;
+let titleText: string = `text-[12x] sm:text-[14px] `;
+let contentText: string = `text-[10px] sm:text-[12px]`;
 
 const index = () => {
   useEffect(() => {
@@ -28,7 +28,7 @@ const index = () => {
                     <p>About.</p><p className={`text-[#7b3aff]`}>txt</p>
                   </div>
                   <div className="h-[25vh] m-4 custom-scrollbar">
-                    <p className={`${contentText}`}>{resume}</p>
+                      <p className={`${contentText}`}>{resume}</p>
                   </div>
                 </div>
 

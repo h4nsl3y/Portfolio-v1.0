@@ -7,7 +7,7 @@ let buttonClass = 'h-1/2 aspect-square flex item-center justify-center rounded b
 let image_style: string = 'w-2/5 aspect-square dark:invert m-auto';
 let listItemStyle: string = 'h-full aspect-square flex items-center justify-center';
 let frameStyle: string = 'h-full w-full flex flex-col items-center justify-center';
-let frameTextStyle: string = 'm-auto text-sm';
+let contentText: string = 'm-auto text-[10px] sm:text-[12px]';
 
 const carousel = () => {
 
@@ -43,7 +43,6 @@ const carousel = () => {
                 gallery.addEventListener("mousemove", drag);
                 document.addEventListener("mouseup", dragStop);
             }
-
 return (
     <div className='w-full h-full'>
         <div className='w-full h-full flex flex-row items-center justify-center'>
@@ -57,7 +56,7 @@ return (
                         <li className={`${listItemStyle}`} key={`Carousel-${index}`}>
                             <div className={`${frameStyle}`}>
                                 <img src={technologies.Path} className='h-3/5 aspect-square' draggable='true'/>          
-                                <p className={`${frameTextStyle}`}>{technologies.Name}</p>
+                                <p className={`${contentText}`}>{technologies.Name}</p>
                             </div>
                         </li>
                     ))}

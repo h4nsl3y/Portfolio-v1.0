@@ -75,9 +75,9 @@ html, body {
     mask: linear-gradient(0deg, transparent, white 10% , white 90%, transparent);
   }
   .glass{
-    background: rgba(80, 80, 168, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(80, 80, 168, 0.0);
+   backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
     box-shadow: 0px 0px 10px rgba(0,0,0,1)
   }
   .rotate-item-1{animation: rotation 10s linear infinite;-webkit-animation: rotation 10s linear infinite; }
