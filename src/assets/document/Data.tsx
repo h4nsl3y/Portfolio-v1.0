@@ -87,7 +87,7 @@ export default {
         "phone": {"Title" : "Phone : ", "ContentType" : "text", "Content" : "+230-5807-8946"},
         "email" : {"Title" : "Email : ", "ContentType" : "email", "Content" : "hansleyeleonore@gmail.com"},
         "linkdin" : {"Title" : "Linkdin : ", "ContentType" : "href", "Content" : "https://www.linkedin.com/in/hansley-eleonore-b17705181"},
-        "github" : {"Title" : "Github : ", "ContentType" : "href", "Content" : "https://github.com/h4nsley"},
+        "github" : {"Title" : "Github : ", "ContentType" : "href", "Content" : "https://github.com/h4nsl3y"},
         "none" : {"Title" : "", "ContentType" : "", "Content" : ""}
     },
     "Technologies" : [
