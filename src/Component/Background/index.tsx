@@ -30,8 +30,6 @@ const Background = () => {
         <div className={`${rotators_class} anti-rotate-item-2`}></div>
         <div className={`${rotators_class} rotate-item-2`}></div>
         <div className={`${rotators_class} anti-rotate-item-1`}></div>
-
-        <script></script>
     </div>
   );
 }
