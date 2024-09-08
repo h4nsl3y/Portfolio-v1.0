@@ -22,7 +22,7 @@ function App() {
             <SectionArea option={selectedOption}/>
         </div>
         <Notification notificationId={notificationContent} setNotification={setNotification}/>
-        <Follower text={followerText}/>
+        {window.innerWidth >= 640 && <Follower followerText={followerText}/> }
       </div>
     )
 }
