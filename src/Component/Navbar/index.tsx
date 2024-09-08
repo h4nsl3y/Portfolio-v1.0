@@ -57,21 +57,21 @@ interface Props{
        }
         <div className='w-full h-fit flex flex-col item-center justify-center'>
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`} >
-            <label className={`${buttonClass} ${option == "Home" ? "bg-colorSelected" : "bg-transparent"}`} onMouseEnter={()=>handleFollowerText('Home')} onMouseLeave={()=>handleFollowerText('')}>
+            <label className={`${buttonClass} ${option == "Home" ? "bg-mainColorSelected" : "bg-transparent"}`} onMouseEnter={()=>handleFollowerText('Home')} onMouseLeave={()=>handleFollowerText('')}>
               <input type="radio" name="screen" value="Home" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
               <img src={home_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>Home</p> }
             </label>
           </div>
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
-            <label className={`${buttonClass} ${option == "About" ? "bg-colorSelected" : "bg-transparent"}`} onMouseEnter={()=>handleFollowerText('About')} onMouseLeave={()=>handleFollowerText('')}>
+            <label className={`${buttonClass} ${option == "About" ? "bg-mainColorSelected" : "bg-transparent"}`} onMouseEnter={()=>handleFollowerText('About')} onMouseLeave={()=>handleFollowerText('')}>
               <input type="radio" name="screen" value="About" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
               <img src={user_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>About</p> }
             </label>
           </div>
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
-            <label className={`${buttonClass} ${option == "Project" ? "bg-colorSelected" : "bg-transparent"}`} onMouseEnter={()=>handleFollowerText('Project')} onMouseLeave={()=>handleFollowerText('')}>
+            <label className={`${buttonClass} ${option == "Project" ? "bg-mainColorSelected" : "bg-transparent"}`} onMouseEnter={()=>handleFollowerText('Project')} onMouseLeave={()=>handleFollowerText('')}>
               <input type="radio" name="screen" value="Project" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
               <img src={code_icon} className={`${imageClass}`}/>
               {window.innerWidth <= 640 && <p>Project</p> }
