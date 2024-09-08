@@ -13,15 +13,16 @@ function App() {
   
     const [selectedOption, setSelectedOption] = useState<string>('Home');
     const [notificationContent, setNotification] = useState<string>("");
+    const [followerText, setFollowerText] = useState<string>("");
 
     return (
-      <div className={`h-screen w-screen bg-white text-black dark:bg-[#121231] dark:text-white flex items-center justify-center`}>
+      <div className={`h-screen w-screen bg-white text-black dark:bg-blackLavender dark:text-white flex items-center justify-center`}>
         <div className={`h-full sm:h-[90%] w-full sm:w-[90%] flex flex-col sm:flex-row items-center justify-between `}>
-            <Navbar option={selectedOption} setOption={setSelectedOption} setNotification={setNotification}/>
+            <Navbar option={selectedOption} setOption={setSelectedOption} setNotification={setNotification} setFollowerText={setFollowerText}/>
             <SectionArea option={selectedOption}/>
         </div>
         <Notification notificationId={notificationContent} setNotification={setNotification}/>
-        <Follower/>
+        <Follower text={followerText}/>
       </div>
     )
 }

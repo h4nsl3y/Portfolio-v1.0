@@ -25,7 +25,7 @@ const index = () => {
                 
                 <div className={`row-span-1 col-span-1 m-2 ${boxStyle}`}>
                   <div className={`flex m-4 ${titleText}`}>
-                    <p>About.</p><p className={`text-[#7b3aff]`}>txt</p>
+                    <p>About.</p><p className={`text-colorSelected`}>txt</p>
                   </div>
                   <div className="h-[25vh] m-4 custom-scrollbar">
                       <p className={`${contentText}`}>{resume}</p>
@@ -34,7 +34,7 @@ const index = () => {
 
                 <div className={`row-span-1 col-span-1 m-2 ${boxStyle} flex flex-col justify-between`}>
                   <div className={`flex m-4 ${titleText}`}>
-                    <p>Technology.</p><p className={`text-[#7b3aff]`}>js</p>
+                    <p>Technology.</p><p className={`text-colorSelected`}>js</p>
                   </div>
                   <div className="flex flex-col text-center items-center justify-center mx-4 my-auto">
                     <Carousel/>
@@ -42,7 +42,7 @@ const index = () => {
                 </div>
                 <div className={`row-span-2 col-span-1 m-2 ${boxStyle}`}>
                   <div className={`flex m-4 ${titleText}`}>
-                    <p>Career.</p><p className={`text-[#7b3aff]`}>txt</p>
+                    <p>Career.</p><p className={`text-colorSelected`}>txt</p>
                   </div>
                   <div className={`w-full h-[68vh] custom-scrollbar`}>
                     <div className={`w-[95%] grid grid-cols-1 grid-flow-row m-auto`}>

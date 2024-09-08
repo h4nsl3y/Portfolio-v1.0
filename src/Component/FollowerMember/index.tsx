@@ -3,24 +3,27 @@ import { useEffect } from "react"
 interface followMember {
     size: string,
     followerIndex: string,
+    followerText: string,
     latence: number
 }
 
-const index = ({size, followerIndex, latence}: followMember) => {
+const index = ({size, followerIndex, followerText, latence}: followMember) => {
 
     useEffect(() => {
         const handleMouseMove = (event: MouseEvent) => {
-            let follower = document.getElementById(followerIndex);
+            let follower = document.getElementById(`${followerIndex}`);
+            let followerBody = document.getElementById(`${followerIndex}-body`);
             let followerEyeL = document.getElementById(`${followerIndex}-eye-l`);
             let followerEyeR = document.getElementById(`${followerIndex}-eye-r`);
 
             let eyeSize = Math.floor(parseInt(size)/4);
-            if (follower) {
+            if (follower && followerBody) {
 
+                followerBody.style.height= `${size}px`;
                 follower.style.height= `${size}px`;
 
-                const y = follower.offsetHeight;
-                const x = follower.offsetWidth;
+                const y = followerBody.offsetHeight;
+                const x = followerBody.offsetWidth;
                 
                 // Update position immediately without delay
                 setTimeout(()=>{
@@ -42,17 +45,21 @@ const index = ({size, followerIndex, latence}: followMember) => {
         document.addEventListener('mousemove', handleMouseMove);
 
         // Clean up the event listener
-        return () => {
-            document.removeEventListener('mousemove', handleMouseMove);
-        };
+        return () => {document.removeEventListener('mousemove', handleMouseMove);};
+
     }, []);
 
-
   return (
-    <div className={`aspect-square rounded-full bg-white absolute`} id={followerIndex}>
-        <div className={`aspect-[1/2] rounded bg-black absolute top-1 left-1`} id={`${followerIndex}-eye-l`}/>
-        <div className={`aspect-[1/2] rounded bg-black absolute top-1 left-3`} id={`${followerIndex}-eye-r`}/>
+    <div className={`h-[${size}px] absolute w-fit flex flex-row `} id={followerIndex}>
+        <div className={`aspect-square bg-white relative rounded-l-sm`} id={`${followerIndex}-body`}>
+            <div className={`aspect-[1/2] rounded bg-black absolute top-1 left-1`} id={`${followerIndex}-eye-l`}/>
+            <div className={`aspect-[1/2] rounded bg-black absolute top-1 left-3`} id={`${followerIndex}-eye-r`}/>
+        </div>
+        <div className={`bg-white relative w-fit rounded-r-sm`}>
+            <p className={`h-[${size}px] text-black`}>{followerText}</p>
+        </div>
     </div>
+
   )
 }
 
