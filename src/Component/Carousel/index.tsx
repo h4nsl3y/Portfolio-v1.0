@@ -7,7 +7,7 @@ let buttonClass = 'h-1/2 aspect-square flex item-center justify-center rounded b
 let image_style: string = 'w-2/5 aspect-square dark:invert m-auto';
 let listItemStyle: string = 'h-full aspect-square flex items-center justify-center';
 let frameStyle: string = 'h-full w-full flex flex-col items-center justify-center';
-let contentText: string = 'm-auto text-[0.8rem] sm:text-[0.9rem]';
+let contentText: string = `text-[0.6rem] sm:text-[0.7rem] 2xl:text-[0.9rem]`;
 
 const carousel = () => {
 

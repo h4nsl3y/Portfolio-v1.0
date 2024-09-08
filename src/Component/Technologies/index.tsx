@@ -14,9 +14,7 @@ const index = ({technologies}: Props) => {
     <div className='h-full w-full flex items-center justify-center'>
         <ul className='w-full h-3/4 sm:h-full flex flex-row overflow-auto custom-scrollbar-h sm:justify-end'>     
           {techImage.map((element) => (
-            technologyList.includes(element.Name.toLocaleLowerCase()) ? (
-              <li className={`${listItemClass}`}><img src={ element.Path} className={`${imageItemClass}`}/></li>
-            ) : null
+            technologyList.includes(element.Name.toLocaleLowerCase()) ? (<li className={`${listItemClass}`}><img src={ element.Path} className={`${imageItemClass}`}/></li>) : null
           ))}
         </ul>
     </div>

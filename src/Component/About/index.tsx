@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 let resume = Data.About;
 let career = Data.Career; 
 let boxStyle: string = `rounded sm:w-[95%] w-full glass`;
-let titleText: string = `text-[1.2rem] sm:text-[1.5rem]`;
-let contentText: string = `text-[0.8rem] sm:text-[0.9rem]`;
+let titleText: string = `text-[1rem] sm:text-[1.2rem] 2xl:text-[1.5rem]`;
+let contentText: string = `text-[0.6rem] sm:text-[0.7rem] 2xl:text-[0.9rem]`;
 
 const index = () => {
   useEffect(() => {

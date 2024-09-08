@@ -1025,6 +1025,11 @@ video {
   background-color: rgb(80 80 168 / var(--tw-bg-opacity));
 }
 
+.bg-mainColorSelected {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 58 255 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1103,6 +1108,14 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[0\.6rem\] {
+  font-size: 0.6rem;
+}
+
+.text-\[0\.9rem\] {
+  font-size: 0.9rem;
 }
 
 .font-bold {
@@ -1615,11 +1628,65 @@ html, body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .sm\:text-\[0\.7rem\] {
+    font-size: 0.7rem;
+  }
+
+  .sm\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+
+  .sm\:text-\[0\.em\] {
+    color: 0.em;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:text-\[12px\] {
     font-size: 12px;
+  }
+
+  .md\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+
+  .md\:text-\[\] {
+    color: ;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+
+  .\32xl\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .\32xl\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
+  }
+
+  .\32xl\:text-\[\] {
+    color: ;
+  }
+
+  .\32xl\:text-\[1\.2\] {
+    color: 1.2;
   }
 }
 

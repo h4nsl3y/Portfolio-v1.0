@@ -20,7 +20,6 @@ const index = ({followerText}: followMember) => {
                     follower.style.left = `${(event.pageX - x / 2)+25}px`;
                     follower.style.top = `${(event.pageY - y / 2)+25}px`;
                 }, 50);
-                
             }
             
             if(followerEye){followerEye.style.height= `${Math.floor(20/2)}px`;}
@@ -28,7 +27,6 @@ const index = ({followerText}: followMember) => {
 
         // Add the event listener
         document.addEventListener('mousemove', handleMouseMove);
-
         // Clean up the event listener
         return () => {document.removeEventListener('mousemove', handleMouseMove);};
 
