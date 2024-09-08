@@ -10,7 +10,7 @@ const index = ({title, content}: CareerCardType) => {
 
   return (
     <div >
-    <div className={`text-[12px] sm:text-[14px] flex m-4`}>
+    <div className={`text-[1rem] sm:text-[1.2rem] flex m-4`}>
       <p>{title}.</p><p className={`text-colorSelected`}>txt</p>
     </div>
       <div className='m-4' id='CareerCardContainer'>

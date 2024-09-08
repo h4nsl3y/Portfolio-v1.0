@@ -1110,6 +1110,30 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-\[0\.8rem\] {
+  font-size: 0.8rem;
+}
+
+.text-\[0\.7rem\] {
+  font-size: 0.7rem;
+}
+
+.text-\[0\.6rem\] {
+  font-size: 0.6rem;
+}
+
+.text-\[0\.4rem\] {
+  font-size: 0.4rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1161,6 +1185,23 @@ video {
 
 .text-transparent {
   color: transparent;
+}
+
+.text-\[1\.2\] {
+  color: 1.2;
+}
+
+.text-\[1\] {
+  color: 1;
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1599,6 +1640,54 @@ html, body {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-\[14rem\] {
+    font-size: 14rem;
+  }
+
+  .sm\:text-\[0\.5rem\] {
+    font-size: 0.5rem;
+  }
+
+  .sm\:text-\[0\.2rem\] {
+    font-size: 0.2rem;
+  }
+
+  .sm\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .sm\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .sm\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+
+  .sm\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
+  }
+
+  .sm\:text-\[1\.4rem\] {
+    font-size: 1.4rem;
+  }
+
+  .sm\:text-\[0\.8rem\] {
+    font-size: 0.8rem;
+  }
+
+  .sm\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+
+  .sm\:text-\[rem\] {
+    color: rem;
+  }
+
+  .sm\:text-\[0\.rem\] {
+    color: 0.rem;
   }
 }
 

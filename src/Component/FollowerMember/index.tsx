@@ -56,7 +56,7 @@ const index = ({size, followerIndex, followerText, latence}: followMember) => {
             <div className={`aspect-[1/2] rounded bg-black absolute top-1 left-3`} id={`${followerIndex}-eye-r`}/>
         </div>
         <div className={`bg-white relative w-fit rounded-r-sm`}>
-            <p className={`h-[${size}px] text-black`}>{followerText}</p>
+            <p className={`h-[${size}px] text-black text-[0.8rem]`}>{followerText}</p>
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 import Technologies from "@/Component/Technologies"
 
-let contentText = `text-[10px] sm:text-[12px]`;
+let contentText: string = `text-[0.8rem] sm:text-[0.9rem]`;
 
 interface Props{
     imagePath_1: string ;
@@ -16,8 +16,8 @@ const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtLi
   return (
     <div className='w-full h-full'>
         <div className='w-full h-1/6 flex justify-between'>
-            <div><p className={`text-[12px] font-bold m-2`}>{title}</p></div>
-            <div><p className={`text-[12px] font-bold m-2`}>{date}</p></div>
+            <div><p className={`text-[1rem] font-bold m-2`}>{title}</p></div>
+            <div><p className={`text-[1rem] font-bold m-2`}>{date}</p></div>
         </div>
         <div className='w-full h-4/6 flex flex-col sm:flex-row'>
             <div className={`h-1/2 w-full sm:w-1/3 sm:h-full flex flex-col`}>

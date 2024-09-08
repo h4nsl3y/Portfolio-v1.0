@@ -2,7 +2,6 @@ import FollowerMember from "@/Component/FollowerMember";
 
 interface followerText { text : string }
   
-
 const index = ({ text } : followerText) => {
   return (
     <div>

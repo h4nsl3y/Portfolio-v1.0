@@ -72,11 +72,11 @@ const index = ({notificationId, setNotification}: Props) => {
 
         <div className='f-full w-full glass rounded flex bg-mainColorLight text-black dark:bg-mainColor dark:text-white items-center justify-center transition-opacity opacity-0 invisible ease-in-out duration-500' id="notificationBody">
           <div className='w-fit text-center justify-center m-2 sm:flex'>
-            <p className='text-[#ffffff] text-sm' id='title'></p>
-            {notificationData.ContentType == "text" && <p className='text-[#ffffff] text-sm' id='content'></p>}
+            <p className='text-white text-sm' id='title'></p>
+            {notificationData.ContentType == "text" && <p className='text-white text-sm' id='content'></p>}
             {notificationData.ContentType != "text" && 
               <div className='text-center justify-center sm:flex'>
-                <a href="#" className='text-[#ffffff] text-sm underline decoration-1 underline-offset-1' id="anchorLink"></a>
+                <a href="#" className='text-white text-sm underline decoration-1 underline-offset-1' id="anchorLink"></a>
               </div>
               }
           </div> 

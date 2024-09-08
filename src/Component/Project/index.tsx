@@ -3,7 +3,7 @@ import Data from '@/assets/document/Data';
 import { useEffect } from 'react'
 
 let cards = Data.Cards;
-let titleText = `text-[12x] sm:text-[14px]`;
+let titleText = `text-[1.2rem] sm:text-[1.5rem]`;
 
 const index = () => {
     useEffect(() => {
