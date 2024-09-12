@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://h4nsl3y.github.io/portfolio",
+  "homepage": "https://h4nsl3y.github.io/Portfolio-v1.0/",
   "scripts": {
     "dev": "vite",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
