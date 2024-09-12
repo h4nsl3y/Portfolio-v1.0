@@ -9,4 +9,5 @@ export default defineConfig({
     alias:[{ find: "@", replacement: path.resolve(__dirname, "src")}]
   },
   assetsInclude: ['**/*.JPG', '**/*.PNG', '**/*.png','**/**/**/*.PNG','**/**/**/**/*.PNG'],
+  base: "/Portfolio-v1.0/",
 })
