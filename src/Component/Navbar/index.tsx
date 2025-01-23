@@ -2,6 +2,7 @@ import navigation_icon from '@/assets/image/navigation_icon.png';
 import home_icon from '@/assets/image/home_icon.png';
 import user_icon from '@/assets/image/user_icon.png';
 import code_icon from '@/assets/image/code_icon.png';
+import ripple_icon from '@/assets/image/ripple_icon.png'
 import document_icon from '@/assets/image/document_icon.png';
 import phone_icon from '@/assets/image/phone_icon.png';
 import email_icon from '@/assets/image/email_icon.png';
@@ -77,6 +78,18 @@ interface Props{
               {window.innerWidth <= 640 && <p>Project</p> }
             </label>
           </div>
+          {
+            window.innerWidth <= 640
+            &&
+            <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
+            <label className={`${buttonClass} ${option == "Audio" ? "bg-mainColorSelected" : "bg-transparent"}`} onMouseEnter={()=>handleFollowerText('Audio')} onMouseLeave={()=>handleFollowerText('')}>
+              <input type="radio" name="screen" value="Audio" className={`absolute opacity-0 w-[0px] h-[0px]`} onChange={handleOptionChange}/>
+              <img src={ripple_icon} className={`${imageClass}`}/>
+              <p>Audio</p> 
+            </label>
+          </div>
+          }
+
           <div className={`w-full h-fit flex flex-row rounded text-center items-center`}>
             <button className={`${buttonClass} bg-transparent`} onClick={()=>{window.open(curriculumVitae, '_blank');}} onMouseEnter={()=>handleFollowerText('Curriculum Vitae')} onMouseLeave={()=>handleFollowerText('')}>
               <img src={document_icon} className={`${imageClass}`}/>

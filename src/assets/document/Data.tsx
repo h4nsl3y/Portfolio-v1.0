@@ -117,5 +117,5 @@ export default {
         { "Name" : "Vite" , "Path" : Vite },
         { "Name" : "VSCode" , "Path" : VSCode }
     ],
-    "CV" : CurriculumVitae
+    "CV" : CurriculumVitae,
 }

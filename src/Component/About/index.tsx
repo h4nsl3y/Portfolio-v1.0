@@ -19,7 +19,7 @@ const index = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex elementScreen transition-opacity opacity-100 duration-300 ease-in-out  subScreenFrame" id='About'>
+    <div className="w-full h-full flex elementScreen transition-opacity opacity-100 duration-300 ease-in-out subScreenFrame" id='About'>
         <div className="h-full w-full flex">
             <div className="h-[90vh] sm:h-[90%] w-[95%] grid grid-rows-[45vh_45vh_45vh] grid-cols-[90vw] sm:grid-cols-2 sm:grid-rows-2 grid-flow-row sm:grid-flow-col m-auto custom-scrollbar">
                 
