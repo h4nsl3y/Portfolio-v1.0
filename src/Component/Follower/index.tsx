@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import followMember from "@/Types/FollowerMemberType";
+import FollowerMemberType from "@/Types/FollowerMemberType";
 
 const index = ({followerText}: FollowerMemberType) => {
 
@@ -20,7 +20,6 @@ const index = ({followerText}: FollowerMemberType) => {
                     follower.style.top = `${(event.pageY - y / 2)+25}px`;
                 }, 50);
             }
-            
             if(followerEye){followerEye.style.height= `${Math.floor(20/2)}px`;}
         };
 

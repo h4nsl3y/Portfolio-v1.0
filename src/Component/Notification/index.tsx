@@ -37,7 +37,9 @@ const index = ({notificationId, setNotification}: Props) => {
     let anchor = document.getElementById("anchorLink");
   
     if(titleText){titleText.textContent = notificationData.Title}
+
     if(contentText ){contentText.textContent=notificationData.Content;}
+
     if(notificationData.ContentType == "href" && anchor){
       (anchor as HTMLAnchorElement).href = notificationData.Content;
       anchor.textContent =notificationData.Content;
@@ -76,7 +78,7 @@ const index = ({notificationId, setNotification}: Props) => {
             {notificationData.ContentType == "text" && <p className='text-white text-sm' id='content'></p>}
             {notificationData.ContentType != "text" && 
               <div className='text-center justify-center sm:flex'>
-                <a href="#" className='text-white text-sm underline decoration-1 underline-offset-1' id="anchorLink"></a>
+                <a href="#" className='text-white text-sm underline decoration-1 underline-offset-1' target="_blank" rel="noopener noreferrer" id="anchorLink"></a>
               </div>
               }
           </div> 
