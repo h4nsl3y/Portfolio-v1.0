@@ -1,11 +1,5 @@
 import CareerCardContent from "@/Component/CareerCardContent"
-import CareerCardDescription from "@/Types/CareerCardDescription";
-
-interface CareerCardType {
-    title: String,
-    content: CareerCardDescription[]
-  }
-
+import CareerCardType from "@/Types/CareerCardType"
 
 const index = ({title, content}: CareerCardType) => {
 

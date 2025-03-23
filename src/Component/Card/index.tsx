@@ -1,18 +1,9 @@
 import Technologies from "@/Component/Technologies"
+import ProjectCardType from "@/Types/ProjectCardType";
 
 let contentText: string = `text-[0.6rem] sm:text-[0.7rem] 2xl:text-[0.9rem]`;
 
-interface Props{
-    imagePath_1: string ;
-    imagePath_2: string ;
-    title:string;
-    date: string;
-    description: string;
-    technologtList: string;
-}
-
-const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtList}: Props) => {
-
+const index = ({imagePath_1, imagePath_2, title ,date ,description, technologtList}: ProjectCardType) => {
   return (
     <div className='w-full h-full'>
         <div className='w-full h-1/6 flex justify-between'>

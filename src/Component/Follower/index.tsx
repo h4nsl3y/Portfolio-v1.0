@@ -1,8 +1,7 @@
 import { useEffect } from "react"
+import followMember from "@/Types/FollowerMemberType";
 
-interface followMember {followerText: string,}
-
-const index = ({followerText}: followMember) => {
+const index = ({followerText}: FollowerMemberType) => {
 
     useEffect(() => {
         const handleMouseMove = (event: MouseEvent) => {

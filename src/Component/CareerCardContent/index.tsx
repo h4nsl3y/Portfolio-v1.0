@@ -1,4 +1,4 @@
-import CareerCardDescription from "@/Types/CareerCardDescription";
+import CareerCardDescription from "@/Types/CareerCardDescriptionType";
 
 let contentText = `text-[0.6rem] sm:text-[0.7rem] 2xl:text-[0.9rem]`;
 

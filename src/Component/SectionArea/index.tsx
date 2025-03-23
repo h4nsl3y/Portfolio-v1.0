@@ -3,7 +3,7 @@ import About from '@/Component/About'
 import Project from '@/Component/Project'
 import AudioResponse from '@/Component/AudioResponse'
 import '@/output.css'
-import Background from '../Background';
+import Background from '../Background/basic';
 
 interface Props{
   option: string;

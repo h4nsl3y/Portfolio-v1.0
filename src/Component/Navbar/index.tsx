@@ -9,18 +9,12 @@ import email_icon from '@/assets/image/email_icon.png';
 import linkdin_icon from '@/assets/image/linkdin_icon.png';
 import github_icon from '@/assets/image/github_icon.png';
 import curriculumVitae from '@/assets/document/Curriculum Vitae.pdf'
+import NavBarType from '@/Types/NavBarType';
 
 let buttonClass = 'h-[50px] sm:h-fit w-full aspect-square flex flex-row sm:rounded text-center items-center transition-colors duration-300 ease-in-out hover:bg-mainColor hover:shadow-lg hover:shadow-black active:bg-colorSelected cursor-pointer';
 let imageClass = 'w-[20px] h-[20px] sm:w-2/5 sm:h-2/5 m-[10px] sm:m-auto dark:invert';
 
-interface Props{
-  option: string;
-  setOption: React.Dispatch<React.SetStateAction<string>>;
-  setNotification: React.Dispatch<React.SetStateAction<string>>;
-  setFollowerText: React.Dispatch<React.SetStateAction<string>>;
-};
-
-  const index = ( {option, setOption, setNotification, setFollowerText} : Props) => {
+  const index = ( {option, setOption, setNotification, setFollowerText} : NavBarType) => {
 
   const handleOptionChange = (btnElement: React.ChangeEvent<HTMLInputElement>) => {
     if(option != btnElement.target.value){
