@@ -30,6 +30,8 @@ import SkillHub_2 from "@/assets/image/mockup/SkillHub_2.png";
 
 import SER_1 from "@/assets/image/mockup/SER.jpg";
 
+import SER_Model from "@/assets/model/speechModel.h5";
+
 import CurriculumVitae from "@/assets/document/Curriculum Vitae.pdf";
 
 export default {
@@ -118,4 +120,5 @@ export default {
         { "Name" : "VSCode" , "Path" : VSCode }
     ],
     "CV" : CurriculumVitae,
+    "SER_Model" : SER_Model,
 }
